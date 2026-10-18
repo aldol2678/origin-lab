@@ -5,7 +5,7 @@ const test = require("node:test"),
   os = require("node:os"),
   path = require("node:path");
 const { bundleAssets, keys } = require("../tools/assets.cjs");
-const { verify, blocked } = require("../tools/verify-r1.cjs");
+const { verify, initialTen } = require("../tools/verify-r1.cjs");
 const list = keys(require("../data/catalog.json"));
 function resolver() {
   const manifest = bundleAssets("assets", list).manifest;
@@ -21,20 +21,11 @@ function resolver() {
   vm.runInContext(src + ";this.get=getAsset;", ctx);
   return { get: ctx.get, manifest };
 }
-test("AR01 reviewed 104-key provenance, 58 supported, 48 enabled, 10 blocked, 106 byte-identical files", () => {
-  assert.equal(verify().files, 106);
+test("AR01 reviewed 104-key provenance, 58 supported, 58 enabled, 0 blocked, 126 byte-identical files", () => {
+  assert.equal(verify().files, 126);
 });
-test("AR02 no blocked or unsupported art resolves; shared lock never reveals discovery identity", () => {
+test("AR02 no unsupported art resolves; shared lock never reveals discovery identity", () => {
   const { get, manifest } = resolver();
-  for (const key of blocked)
-    for (const state of [
-      "default",
-      "locked",
-      "selected",
-      "discovered",
-      "disabled",
-    ])
-      assert.equal(get(key, { state, theme: "light" }), null);
   for (const key of ["ui.logo", "status.nutrients", "ui.button.primary"])
     assert.equal(get(key), null);
   const locks = new Set();
@@ -101,12 +92,6 @@ test("AR05 no fonts, archive, preview, logo or large illustrations in runtime as
         x.path,
       ),
     );
-    assert(
-      !blocked.some(
-        (k) =>
-          path.basename(x.path).split(".")[0] === k.split(".")[1] &&
-          x.path.includes("/discoveries/"),
-      ),
-    );
+
   }
 });

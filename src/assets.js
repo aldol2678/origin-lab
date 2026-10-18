@@ -62,6 +62,14 @@ function assetImage(key, variant) {
   }
   return image.complete && image.naturalWidth ? image : null;
 }
+// Re-selecting the same species clears only the presentation selection.
+const assetSelectSpecies = Ge.prototype.selectSpecies;
+Ge.prototype.selectSpecies = function (id) {
+  if (this.selectedSpecies !== id) return assetSelectSpecies.call(this, id);
+  this.selectedSpecies = null;
+  this.renderWorld();
+  this.draw(true);
+};
 const assetDrawAgent = Pe.prototype.drawAgent;
 Pe.prototype.drawAgent = function (sp, x, y, time) {
   const image = assetImage("species." + sp, {

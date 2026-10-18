@@ -5,739 +5,1076 @@
   "sourceRegistrySha256": "055a3304288501697bc5e5c2351860ba565ae814012305b6926bf71edf1886be",
   "sourceFilesVerified": 1643,
   "designApproved": true,
+  "draftIntegrationApproved": true,
   "releaseApproved": false,
+  "productionDeploymentApproved": false,
+  "correctionTask": "ORIGIN-LAB-ASSET-R1-CLOSEOUT-002",
   "originalRegistryUnmodified": true,
   "records": [
     {
       "key": "discovery.water",
       "sourceApproved": false,
       "runtimeSupported": true,
-      "rightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
-      "integration": "BLOCKED_PROVENANCE"
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "draftIntegrationApproved": true,
+      "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.mineral",
       "sourceApproved": false,
       "runtimeSupported": true,
-      "rightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
-      "integration": "BLOCKED_PROVENANCE"
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "draftIntegrationApproved": true,
+      "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.atmosphere",
       "sourceApproved": false,
       "runtimeSupported": true,
-      "rightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
-      "integration": "BLOCKED_PROVENANCE"
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "draftIntegrationApproved": true,
+      "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.energy",
       "sourceApproved": false,
       "runtimeSupported": true,
-      "rightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
-      "integration": "BLOCKED_PROVENANCE"
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "draftIntegrationApproved": true,
+      "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.vapor",
       "sourceApproved": false,
       "runtimeSupported": true,
-      "rightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
-      "integration": "BLOCKED_PROVENANCE"
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "draftIntegrationApproved": true,
+      "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.cloud",
       "sourceApproved": false,
       "runtimeSupported": true,
-      "rightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
-      "integration": "BLOCKED_PROVENANCE"
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "draftIntegrationApproved": true,
+      "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.rain",
       "sourceApproved": false,
       "runtimeSupported": true,
-      "rightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
-      "integration": "BLOCKED_PROVENANCE"
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "draftIntegrationApproved": true,
+      "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.sediment",
       "sourceApproved": false,
       "runtimeSupported": true,
-      "rightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
-      "integration": "BLOCKED_PROVENANCE"
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "draftIntegrationApproved": true,
+      "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.heat",
       "sourceApproved": false,
       "runtimeSupported": true,
-      "rightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
-      "integration": "BLOCKED_PROVENANCE"
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "draftIntegrationApproved": true,
+      "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.hydrothermal",
       "sourceApproved": false,
       "runtimeSupported": true,
-      "rightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
-      "integration": "BLOCKED_PROVENANCE"
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "draftIntegrationApproved": true,
+      "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.nutrients",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.organic_precursor",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.membrane",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.replicator",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.protocell",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.metabolic_cycle",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.chemosynth_microbe",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.pigment",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.photosynthesis",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.photo_microbe",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.aerobic_metabolism",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.grazer",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.predator",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.decomposer",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.coastal_habitat",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.coastal_colony",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.symbiosis",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.sensory_response",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.oxygen_accumulation",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.trophic_balance",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.tidal_habitat",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.cell_adhesion",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.division_of_labor",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.macroalgae",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.filter_flow",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.sponge",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.nerve_net",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.cnidarian",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.nursery",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.resilient_web",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.light_comparison",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "discovery.living_web",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "species.chemosynth_microbe",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "species.photo_microbe",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "species.grazer",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "species.predator",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "species.decomposer",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "species.coastal_colony",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "species.macroalgae",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "species.sponge",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "species.cnidarian",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "status.oxygen",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "status.energy",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "status.insight",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "status.growth",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.decline",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.discovery",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.warning",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.experiment",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.compare",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.graph",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.origin_data",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.nutrients",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.predation",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.decomposition",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.photosynthesis",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.respiration",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.shelter",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.population",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.filter_feeding",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.save",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.restore",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.lock",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.unlock",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.info",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.success",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.pause",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.play",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "status.reset",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.tab.world",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "ui.tab.lab",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "ui.tab.evo",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "ui.tab.log",
       "sourceApproved": false,
       "runtimeSupported": true,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": true,
       "integration": "ENABLED_FOR_DRAFT_REVIEW"
     },
     {
       "key": "ui.component.slot_empty",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.slot_selected",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.slot_complete",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.button_default",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.button_hover",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.button_active",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.button_disabled",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.card_info",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.card_discovery",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.research_panel",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.comparison_a",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.comparison_b",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.legend_producer",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.legend_grazer",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.legend_predator",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.legend_decomposer",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.progress_track",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.progress_fill",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.badge_warning",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.badge_info",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     },
     {
       "key": "ui.component.badge_success",
       "sourceApproved": false,
       "runtimeSupported": false,
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
       "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "draftIntegrationApproved": false,
       "integration": "OUT_OF_SCOPE"
     }
   ],
   "files": [
+    {
+      "path": "r1/discoveries/svg20-light/water.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-light/water.svg",
+      "sha256": "e09e0ef7d9b19dfd724e201e15c790994491ac87227e7a50da5a1e3b76483b12",
+      "bytes": 376
+    },
+    {
+      "path": "r1/discoveries/svg20-dark/water.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-dark/water.svg",
+      "sha256": "37b27bcf0ffe85522a3e42c22145f9eb546dcbf860632a6ec8a7bb7fb98db6f2",
+      "bytes": 376
+    },
+    {
+      "path": "r1/common/locked.svg",
+      "sourcePath": "assets/staging/common/locked.svg",
+      "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+      "bytes": 517
+    },
+    {
+      "path": "r1/discoveries/svg20-light/mineral.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-light/mineral.svg",
+      "sha256": "b6c596e510ad00b1991c7b962d91338d013850c8859765a905606e0da2d7a28a",
+      "bytes": 362
+    },
+    {
+      "path": "r1/discoveries/svg20-dark/mineral.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-dark/mineral.svg",
+      "sha256": "43c473830026a4a19a0d069d7a1cb516c7cbb7d14b310a0800432087d189ebf9",
+      "bytes": 362
+    },
+    {
+      "path": "r1/discoveries/svg20-light/atmosphere.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-light/atmosphere.svg",
+      "sha256": "f94e29f45fd3de0ad491767e18e38c40d090563884b199cc510a2b6acdac6415",
+      "bytes": 363
+    },
+    {
+      "path": "r1/discoveries/svg20-dark/atmosphere.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-dark/atmosphere.svg",
+      "sha256": "f94e29f45fd3de0ad491767e18e38c40d090563884b199cc510a2b6acdac6415",
+      "bytes": 363
+    },
+    {
+      "path": "r1/discoveries/svg20-light/energy.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-light/energy.svg",
+      "sha256": "a8452f43971daacd0d93902a2d246ae4d9abdba8bd06bbd4c3b1a34ce3044d82",
+      "bytes": 227
+    },
+    {
+      "path": "r1/discoveries/svg20-dark/energy.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-dark/energy.svg",
+      "sha256": "d2aa57d582959b6ae7300d5efff866da1a7fc31c8a934e302193086e6ccd0e91",
+      "bytes": 227
+    },
+    {
+      "path": "r1/discoveries/svg20-light/vapor.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-light/vapor.svg",
+      "sha256": "dd421cb4ba891f81c4097cb9d7d24dc36f42f99d170beb6f83011ced219abb55",
+      "bytes": 264
+    },
+    {
+      "path": "r1/discoveries/svg20-dark/vapor.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-dark/vapor.svg",
+      "sha256": "dd421cb4ba891f81c4097cb9d7d24dc36f42f99d170beb6f83011ced219abb55",
+      "bytes": 264
+    },
+    {
+      "path": "r1/discoveries/svg20-light/cloud.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-light/cloud.svg",
+      "sha256": "a97d65039a56674e67a0a2ff41f32a181e6ba1222c0e10fcdbc68010cd7cb7c6",
+      "bytes": 367
+    },
+    {
+      "path": "r1/discoveries/svg20-dark/cloud.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-dark/cloud.svg",
+      "sha256": "829ade83077bb1f5199f3e9092938117ae1758012f00f369ebf130bed9e92ed8",
+      "bytes": 367
+    },
+    {
+      "path": "r1/discoveries/svg20-light/rain.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-light/rain.svg",
+      "sha256": "23b575d8e67cec02fe1069b8c7c5dbdd236c19630b775987102ab8d51045ac14",
+      "bytes": 393
+    },
+    {
+      "path": "r1/discoveries/svg20-dark/rain.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-dark/rain.svg",
+      "sha256": "ef84dc8609d497b6a42cbba48f0e7d72d965bacaeb6c0cfea72faedf5756447e",
+      "bytes": 393
+    },
+    {
+      "path": "r1/discoveries/svg20-light/sediment.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-light/sediment.svg",
+      "sha256": "d5eb8aad001c6b7fd0cf9800667f5f8818f84c471a29ea51906a66d4ecf03dd8",
+      "bytes": 505
+    },
+    {
+      "path": "r1/discoveries/svg20-dark/sediment.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-dark/sediment.svg",
+      "sha256": "e89ad6de472ce8dda1c2d10a2449e1891d9071e171aa964519c8afc25d918136",
+      "bytes": 505
+    },
+    {
+      "path": "r1/discoveries/svg20-light/heat.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-light/heat.svg",
+      "sha256": "d4935f87fb90dfb7c9a136e96c9e892894f20140547febc32c4cfc748fac5023",
+      "bytes": 382
+    },
+    {
+      "path": "r1/discoveries/svg20-dark/heat.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-dark/heat.svg",
+      "sha256": "3611db342c515d98bccfb52d2e30b3284d3a0c666df6dc0b691e287a8806e82e",
+      "bytes": 382
+    },
+    {
+      "path": "r1/discoveries/svg20-light/hydrothermal.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-light/hydrothermal.svg",
+      "sha256": "33760380e657b7e350a5beae315e9ed985712b6c2750000b47a1fe4b8aab264b",
+      "bytes": 479
+    },
+    {
+      "path": "r1/discoveries/svg20-dark/hydrothermal.svg",
+      "sourcePath": "assets/staging/discoveries/svg20-dark/hydrothermal.svg",
+      "sha256": "ef5b3b2f121f48ea4d6d928626a5894a29fd6d947dfca08995d2b03105207d1e",
+      "bytes": 479
+    },
     {
       "path": "r1/discoveries/svg20-light/nutrients.svg",
       "sourcePath": "assets/staging/discoveries/svg20-light/nutrients.svg",
@@ -749,12 +1086,6 @@
       "sourcePath": "assets/staging/discoveries/svg20-dark/nutrients.svg",
       "sha256": "383072de867529ff6c018ecdeb793c33cade976b3137d272873afd9309bb15eb",
       "bytes": 539
-    },
-    {
-      "path": "r1/common/locked.svg",
-      "sourcePath": "assets/staging/common/locked.svg",
-      "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
-      "bytes": 517
     },
     {
       "path": "r1/discoveries/svg20-light/organic_precursor.svg",
@@ -1378,9 +1709,9 @@
   "counts": {
     "registered": 104,
     "supported": 58,
-    "enabled": 48,
-    "blocked": 10,
+    "enabled": 58,
+    "blocked": 0,
     "outOfScope": 46,
-    "files": 106
+    "files": 126
   }
 }

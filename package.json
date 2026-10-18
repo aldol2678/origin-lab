@@ -1,19 +1,19 @@
 {
   "name": "origin-lab",
   "version": "0.3.0",
-  "description": "기원의 실험실: 독립 HTML 생태계 발견 게임",
+  "description": "\uae30\uc6d0\uc758 \uc2e4\ud5d8\uc2e4: \ub3c5\ub9bd HTML \uc0dd\ud0dc\uacc4 \ubc1c\uacac \uac8c\uc784",
   "directories": {
     "test": "tests"
   },
   "scripts": {
     "build": "node build.cjs",
-    "test": "node tests/reproduce-legacy.cjs && node --test tests/v02-core.test.cjs tests/core.test.cjs tests/v03.test.cjs tests/assets.test.cjs tests/r1-assets.test.cjs && node tests/balance.cjs",
-    "test:browser": "node build.cjs && node tests/v02-browser.cjs && node tests/browser.cjs && node tests/v03-ui.cjs && node tests/r1-browser.cjs",
+    "test": "node tests/reproduce-legacy.cjs && node --test tests/v02-core.test.cjs tests/core.test.cjs tests/v03.test.cjs tests/assets.test.cjs tests/r1-assets.test.cjs tests/closeout.test.cjs && node tests/balance.cjs",
+    "test:browser": "node build.cjs && node tests/v02-browser.cjs && node tests/browser.cjs && node tests/v03-ui.cjs && node tests/r1-browser.cjs && node tests/closeout-browser.cjs",
     "check": "npm test && npm run test:browser",
     "test:evidence": "node tests/evidence.cjs",
     "audit:public": "node tools/public-audit.cjs && node tools/verify-r1.cjs",
     "test:balance": "node tests/balance.cjs",
-    "test:assets": "node --test tests/assets.test.cjs tests/r1-assets.test.cjs && node tools/verify-r1.cjs"
+    "test:assets": "node --test tests/assets.test.cjs tests/r1-assets.test.cjs tests/closeout.test.cjs && node tools/verify-r1.cjs"
   },
   "keywords": [],
   "type": "commonjs",

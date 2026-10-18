@@ -58,7 +58,7 @@ npm run test:browser
 - `src/game.js`, `src/chapter.js`: 기존 엔진·두 장 콘텐츠·UI. 이전 번들에서 추출한 JavaScript 이력을 유지합니다. 원본 TypeScript 복구로 주장하지 않습니다.
 - `src/research.js`, `src/research-ui.js`: 복제·실측·그래프·연구 노트·자동화.
 - `src/persistence.js`: v4 정본·명시적 이전·충돌·복구.
-- `assets/manifest.json`, `src/assets.js`, `tools/assets.cjs`: 선택 에셋 계약과 오프라인 빌드 어댑터. R1의 검증된 48개 키를 인라인하며 나머지 10개는 기본 표시를 유지합니다.
+- `assets/manifest.json`, `src/assets.js`, `tools/assets.cjs`: 선택 에셋 계약과 오프라인 빌드 어댑터. R1의 승인된 지원 키 58개를 인라인합니다.
 - `origin-lab-v0.2.html`: 변경하지 않은 v0.2 회귀 기준선.
 - `tests/v02-*`: 동결된 기준선 테스트. 나머지 테스트는 v0.3 및 이전 동작 회귀.
 - [설계](docs/V03-DESIGN.md), [에셋 계약](docs/ASSET-INTEGRATION.md), [QA 보고서](qa/V03-REPORT.md).
@@ -69,13 +69,13 @@ npm run test:browser
 
 ## Asset Kit v1.1 R1 연결
 
-지원 키 58개 중 **48개 연결 / 출처 이력 미확인 10개 보류**입니다. 발견 32개·생물 9종·상태 3개·탭 4개에 정본의 작은 크기 변형을 연결했습니다. 106개 파일은 원본 바이트 그대로이며 실행 HTML에 모두 포함됩니다. 밝은/어두운 테마, 생물 선택 표시, 잠긴 도감의 공통 잠금 표시와 이미지 오류 시 기본 표시를 지원합니다.
+지원 키 **58/58개 연결**입니다. 발견 42개·생물 9종·상태 3개·탭 4개에 정본의 작은 크기 변형을 연결했습니다. 126개 파일은 원본 바이트 그대로이며 실행 HTML에 모두 포함됩니다. 밝은/어두운 테마, 생물 선택 표시, 잠긴 도감의 공통 잠금 표시와 이미지 오류 시 기본 표시를 지원합니다.
 
-초기 발견 10개는 제공 기록의 외부 출처가 UNKNOWN이므로 그림을 공개 소스나 HTML에 넣지 않았습니다. 기존 텍스트와 기본 화면으로 정상 플레이할 수 있습니다. 이 통합은 Draft 검토용이며 출시 승인이나 새 라이선스 부여를 뜻하지 않습니다.
+초기 발견 10개는 설계자 확인과 R2/R1 파일 대조를 통해 사용자 주도 ChatGPT 생성·프로젝트 내부 수정 제작물로 출처를 정정했습니다. 최종 R1 소형 벡터만 연결하며, 과거 광택 원화는 포함하지 않습니다. 이 통합은 명시적으로 승인된 공개 Draft 검토용이며 출시 승인이나 새 라이선스 부여를 뜻하지 않습니다. 생물 버튼을 다시 누르면 선택만 해제됩니다.
 
 - [58개 키별 상태](docs/ASSET-R1-KEYS.md)
 - [연결 계약과 재검증 방법](docs/ASSET-INTEGRATION.md)
 - [파일별 출처·SHA-256 기록](assets/r1-provenance.json)
-- [R1 검증 보고서](qa/ASSET-R1-REPORT.md)
+- [A01~A15 검증 보고서](qa/ASSET-R1-INTEGRATION-REPORT.md) · [출처 정정 감사](docs/ASSET-R1-PROVENANCE-AUDIT.md)
 
 `npm run test:assets`로 선별 파일과 매니페스트의 해시·권리 상태·범위를 재검증합니다. 실제 디코딩, 18px 생물, 20px UI, 테마, 키보드, 실패 시 기본 표시는 `npm run test:browser`에 포함됩니다.

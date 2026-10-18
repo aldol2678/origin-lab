@@ -126,7 +126,7 @@ async function check(name, fn) {
         /\?\?\?/,
       );
       for (const id of ["water", "mineral", "hydrothermal"])
-        assert.equal(await page.locator(`[data-codex="${id}"] img`).count(), 0);
+        assert.equal(await page.locator(`[data-codex="${id}"] img`).count(), 1);
       await page.screenshot({
         path: "qa/screenshots/r1-locked-390.png",
         fullPage: true,

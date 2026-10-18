@@ -1,0 +1,1796 @@
+{
+  "schema": "origin-lab.asset-mapping.r1",
+  "keys": [
+    {
+      "key": "discovery.water",
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/water.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/water.svg",
+          "sha256": "e09e0ef7d9b19dfd724e201e15c790994491ac87227e7a50da5a1e3b76483b12",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/water.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/water.svg",
+          "sha256": "37b27bcf0ffe85522a3e42c22145f9eb546dcbf860632a6ec8a7bb7fb98db6f2",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.mineral",
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/mineral.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/mineral.svg",
+          "sha256": "b6c596e510ad00b1991c7b962d91338d013850c8859765a905606e0da2d7a28a",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/mineral.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/mineral.svg",
+          "sha256": "43c473830026a4a19a0d069d7a1cb516c7cbb7d14b310a0800432087d189ebf9",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.atmosphere",
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/atmosphere.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/atmosphere.svg",
+          "sha256": "f94e29f45fd3de0ad491767e18e38c40d090563884b199cc510a2b6acdac6415",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/atmosphere.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/atmosphere.svg",
+          "sha256": "f94e29f45fd3de0ad491767e18e38c40d090563884b199cc510a2b6acdac6415",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.energy",
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/energy.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/energy.svg",
+          "sha256": "a8452f43971daacd0d93902a2d246ae4d9abdba8bd06bbd4c3b1a34ce3044d82",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/energy.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/energy.svg",
+          "sha256": "d2aa57d582959b6ae7300d5efff866da1a7fc31c8a934e302193086e6ccd0e91",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.vapor",
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/vapor.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/vapor.svg",
+          "sha256": "dd421cb4ba891f81c4097cb9d7d24dc36f42f99d170beb6f83011ced219abb55",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/vapor.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/vapor.svg",
+          "sha256": "dd421cb4ba891f81c4097cb9d7d24dc36f42f99d170beb6f83011ced219abb55",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.cloud",
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/cloud.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/cloud.svg",
+          "sha256": "a97d65039a56674e67a0a2ff41f32a181e6ba1222c0e10fcdbc68010cd7cb7c6",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/cloud.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/cloud.svg",
+          "sha256": "829ade83077bb1f5199f3e9092938117ae1758012f00f369ebf130bed9e92ed8",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.rain",
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/rain.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/rain.svg",
+          "sha256": "23b575d8e67cec02fe1069b8c7c5dbdd236c19630b775987102ab8d51045ac14",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/rain.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/rain.svg",
+          "sha256": "ef84dc8609d497b6a42cbba48f0e7d72d965bacaeb6c0cfea72faedf5756447e",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.sediment",
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/sediment.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/sediment.svg",
+          "sha256": "d5eb8aad001c6b7fd0cf9800667f5f8818f84c471a29ea51906a66d4ecf03dd8",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/sediment.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/sediment.svg",
+          "sha256": "e89ad6de472ce8dda1c2d10a2449e1891d9071e171aa964519c8afc25d918136",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.heat",
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/heat.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/heat.svg",
+          "sha256": "d4935f87fb90dfb7c9a136e96c9e892894f20140547febc32c4cfc748fac5023",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/heat.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/heat.svg",
+          "sha256": "3611db342c515d98bccfb52d2e30b3284d3a0c666df6dc0b691e287a8806e82e",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.hydrothermal",
+      "sourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "rightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/hydrothermal.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/hydrothermal.svg",
+          "sha256": "33760380e657b7e350a5beae315e9ed985712b6c2750000b47a1fe4b8aab264b",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/hydrothermal.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/hydrothermal.svg",
+          "sha256": "ef5b3b2f121f48ea4d6d928626a5894a29fd6d947dfca08995d2b03105207d1e",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.nutrients",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/nutrients.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/nutrients.svg",
+          "sha256": "3e11c7558ebe46bffbd011a700fdf274d794bed93288cd1376e4b33cc23022cb",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/nutrients.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/nutrients.svg",
+          "sha256": "383072de867529ff6c018ecdeb793c33cade976b3137d272873afd9309bb15eb",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.organic_precursor",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/organic_precursor.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/organic_precursor.svg",
+          "sha256": "47e76bd77b0b8a67ebf746dfc0072655898917278b9a877ce5ee6270c2bc4ab0",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/organic_precursor.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/organic_precursor.svg",
+          "sha256": "1d9a993f05e6c028a94b5832c41748d933b320f56002e211163629c11c390916",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.membrane",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/membrane.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/membrane.svg",
+          "sha256": "e60e258484cb11e0194b1cf2f8bed00fb56d588446435595b4b0143c020d3315",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/membrane.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/membrane.svg",
+          "sha256": "79dbc0523e5ce5e17f6a89aec187e73122905f3a32adfba9643f9917526a00ce",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.replicator",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/replicator.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/replicator.svg",
+          "sha256": "81e7347c5b8f8a18e6f5b2b9732a0dc62cd549c6cdbf3251a508c650c849a7b8",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/replicator.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/replicator.svg",
+          "sha256": "81e7347c5b8f8a18e6f5b2b9732a0dc62cd549c6cdbf3251a508c650c849a7b8",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.protocell",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/protocell.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/protocell.svg",
+          "sha256": "84c039c416c899980287356cbe1f9bf6b9b0f0610b63eb9f4cfbd58f3de7293d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/protocell.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/protocell.svg",
+          "sha256": "59f07465cc03def0deb6a06b6f9d82796560bac84f03dc9561a9e5f992a785f1",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.metabolic_cycle",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/metabolic_cycle.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/metabolic_cycle.svg",
+          "sha256": "afd21b252e614ee11897bef695b405df719d53ff2456c4401a7e0f3e92f129ec",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/metabolic_cycle.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/metabolic_cycle.svg",
+          "sha256": "af930fe2ac8a2a860b956fa199348bd85d09be6daa09f6a0e22f8297ef6da1a8",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.chemosynth_microbe",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/chemosynth_microbe.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/chemosynth_microbe.svg",
+          "sha256": "5cc8b3f9cc7e7f87e997645aa93cf32920b2be30d6fb81b9fc66737c7b83f9af",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/chemosynth_microbe.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/chemosynth_microbe.svg",
+          "sha256": "0a034943b708a2398e04eddd7fb42df50022de43652bef96e8a0d284302291ff",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.pigment",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/pigment.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/pigment.svg",
+          "sha256": "db76d748ad8bfe395228f3117980d78274475837e460522dd608e704a5834f6b",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/pigment.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/pigment.svg",
+          "sha256": "3289f64ec6337895c75a00fa0b3860221e7dc8f3ede2d564d8a0b339d10b3c41",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.photosynthesis",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/photosynthesis.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/photosynthesis.svg",
+          "sha256": "79f50f5aa00ae10e158116a5934635d50773f03af279406cab4161fbcb446668",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/photosynthesis.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/photosynthesis.svg",
+          "sha256": "034676aa7a727cc9f840a61ba5e33dff7555b5816754cd63ff32316d2376f7f7",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.photo_microbe",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/photo_microbe.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/photo_microbe.svg",
+          "sha256": "457771567708ed32d4d41b849d58c0405d468c05bd0efb7db13548e4ad679089",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/photo_microbe.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/photo_microbe.svg",
+          "sha256": "da4ba7c5cd5315917a249429b4b093b613825241c4b0a20be2ae56247244dbe2",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.aerobic_metabolism",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/aerobic_metabolism.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/aerobic_metabolism.svg",
+          "sha256": "f5032574a116669dd639d9fa3380def7b6a665aa05ecda54ddb5fefc01a33bbd",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/aerobic_metabolism.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/aerobic_metabolism.svg",
+          "sha256": "494df091127ba0939ab3c1cdcffbe48fcc84e7114c2375da85e4263990932798",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.grazer",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/grazer.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/grazer.svg",
+          "sha256": "a443dbe67ff3bb2fc9b169082f2973fd6aab127ddc12fc63c71dd4e408e8b8f7",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/grazer.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/grazer.svg",
+          "sha256": "332a4887a3717a9a8bdf02cd9ed6fe2a948cf0e9ca855a0156df5cb41d06448f",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.predator",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/predator.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/predator.svg",
+          "sha256": "b4cbb5b6d99cd57efdc52a2df70412297b1635cb72be955e31bb43d01630f504",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/predator.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/predator.svg",
+          "sha256": "9558c54c333697d0a291479d4960a826e33e833f2f9473d8fac775f8720b30d9",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.decomposer",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/decomposer.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/decomposer.svg",
+          "sha256": "d3735bf6f7e58b43b740bcad1c5c6ad4dafd754dfbedf981fbaf7091b77c8d31",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/decomposer.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/decomposer.svg",
+          "sha256": "a95ea074f8b840d5db65c2185eac4859d6d56d6d109e65183902a8f06e4694b7",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.coastal_habitat",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/coastal_habitat.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/coastal_habitat.svg",
+          "sha256": "387f09ea1ea9c99fa93ddd87857ff0be0581659d2f3eb99b9758a906eb79074c",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/coastal_habitat.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/coastal_habitat.svg",
+          "sha256": "485afd14ce6f0bf1ff528815d116870a5295d0ccabed87b16ba89383b0f84fcc",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.coastal_colony",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/coastal_colony.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/coastal_colony.svg",
+          "sha256": "a7b1c7db6b28788089bb861e0d610293314d60140b846e44de363ab317ffd0bf",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/coastal_colony.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/coastal_colony.svg",
+          "sha256": "414dbabb2653665cad93582a563bfa53afb3103a3b894ede6ca2f25a76ce03f9",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.symbiosis",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/symbiosis.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/symbiosis.svg",
+          "sha256": "33e99bee4d67fcace7693594ad2cb2a5f3d80f27e0f911e4fb0132510a4fbce3",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/symbiosis.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/symbiosis.svg",
+          "sha256": "44ab58767f95b3d37aab32e3f85fd43dc6e492e3d8f0958e44330907a305f84e",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.sensory_response",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/sensory_response.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/sensory_response.svg",
+          "sha256": "7b3478bd5fb70eed163a98ec5cb18a0b110d47c864fe34767c178e1193a9de82",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/sensory_response.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/sensory_response.svg",
+          "sha256": "bdcde5b0901147e84bf73d60ca5d7c0805cb9a393430d37b940c15b875798655",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.oxygen_accumulation",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/oxygen_accumulation.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/oxygen_accumulation.svg",
+          "sha256": "e3574622ab94f5b5b300e5b5cc8f2c49c5ef378c09fb4e627b06bd5facdb31c8",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/oxygen_accumulation.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/oxygen_accumulation.svg",
+          "sha256": "b03c64cfd515ac0a4876d7869bd3aee011953e20e6c8eb1497ec9b469c8b214b",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.trophic_balance",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/trophic_balance.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/trophic_balance.svg",
+          "sha256": "76e70930a36cad34001ed977e5353c250fc8a3b75516f752cad96e00b54cf31a",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/trophic_balance.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/trophic_balance.svg",
+          "sha256": "a80768229b6ec6d460ca87bfc30537ada45bcb0e34e006d3dcad311f2df77a45",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.tidal_habitat",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/tidal_habitat.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/tidal_habitat.svg",
+          "sha256": "c8edc39a415334941e76158861bf6f6d876ff5b6e3a1e7ac95aba27d0b1b34a4",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/tidal_habitat.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/tidal_habitat.svg",
+          "sha256": "a9de47c346f29c30e8532a36c4e01f63488535b0d00607eb91f8e66480a6c360",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.cell_adhesion",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/cell_adhesion.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/cell_adhesion.svg",
+          "sha256": "c9a52e3456c8bf46b70c0de184ba3ecb1d5de9653dd0e5c4f2e11388435d94b9",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/cell_adhesion.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/cell_adhesion.svg",
+          "sha256": "971d0029328f3f80e64ecfef5d2f61c8e792d1ec854a10be4eaa6f1d821d119e",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.division_of_labor",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/division_of_labor.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/division_of_labor.svg",
+          "sha256": "6a541222fe6d5622d46fc7ac226b0245ce29803bef71daef44d83809717d0da7",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/division_of_labor.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/division_of_labor.svg",
+          "sha256": "d252060ba4dcc28afe46951d4bd0b01e46261a5ce4d6a1f8110905b274b41f57",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.macroalgae",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/macroalgae.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/macroalgae.svg",
+          "sha256": "0552cbf72069aeeab3b47e2dcb68d0b39993e41d8588b8564d116c8e35054739",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/macroalgae.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/macroalgae.svg",
+          "sha256": "ec8f77ae78c292c3da28531bbe90e8facc73ea9a40ce387919ce21079efcc3d6",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.filter_flow",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/filter_flow.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/filter_flow.svg",
+          "sha256": "e1b7b8dc1f0f45fa1ddae1ebe5ff621eda0ed4690807745c3458b2fea093fd7e",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/filter_flow.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/filter_flow.svg",
+          "sha256": "ef161a12d1ad893d7d118763d9a1d286ae6e42acdb69f7375411c3f630035eca",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.sponge",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/sponge.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/sponge.svg",
+          "sha256": "b316753bf77f3b068c051b58a2ecfb840c2b923bbd3af4335d093bd5bc8126c4",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/sponge.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/sponge.svg",
+          "sha256": "6ce1fc41e8db7b4457584408b9b2935920a1649c8efec41fb15c68c6f36ea58e",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.nerve_net",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/nerve_net.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/nerve_net.svg",
+          "sha256": "9f497300c9a906a835fc07c849425f30a0ac281914ad2b3bfc259083f3e5c908",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/nerve_net.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/nerve_net.svg",
+          "sha256": "9ec0201ad3f42a01143b0cf54e13a1d072f9d09baa2f83bc701307941e40d438",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.cnidarian",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/cnidarian.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/cnidarian.svg",
+          "sha256": "8f369c01422bb27032529167874e5e970f04bf0a1ceba5edc0e81fb63c3c26cb",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/cnidarian.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/cnidarian.svg",
+          "sha256": "6ce3adf34f473fe859625ba9caa83a345358e6d1856001af096c00b33de3ce7d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.nursery",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/nursery.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/nursery.svg",
+          "sha256": "5b6a8da7b3d86dcc8c3ece0639165035e6425235ca4cbc6136ffa593f100ecf5",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/nursery.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/nursery.svg",
+          "sha256": "9fa0cb70641347e53f8ca894cdcb633608f7fa7dafb0b0a27839468733c25ff5",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.resilient_web",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/resilient_web.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/resilient_web.svg",
+          "sha256": "fb8df32027c0063b7edf96e043510df405e5ac3eb1a432b805d7526487b8ac66",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/resilient_web.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/resilient_web.svg",
+          "sha256": "6e29d2703a8786b726b4cfdd18b0ab1e3cb8adbfc564e9a2b0a73fc2e7a0a25e",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.light_comparison",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/light_comparison.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/light_comparison.svg",
+          "sha256": "a673defcf77b810da3d879d6cc0ec0600d6cee71823c02a8f53245c9d0cc1325",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/light_comparison.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/light_comparison.svg",
+          "sha256": "fc7d4ca41a1839160fa066c5d59e639a3556101a2c8038fab8e2f56f9496afac",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "discovery.living_web",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/discoveries/svg20-light/living_web.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-light/living_web.svg",
+          "sha256": "0570a3ec67e5a7ccd4cec4cc5a03423cd35d334353f1c10aa3252b762c63e0c0",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/discoveries/svg20-dark/living_web.svg",
+          "destinationPath": "assets/r1/discoveries/svg20-dark/living_web.svg",
+          "sha256": "a6896a8a2c005eb32cb9ed6913b1fb41c9c69cb6bdea96a388c7607d1bb07699",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.locked",
+          "sourcePath": "assets/staging/common/locked.svg",
+          "destinationPath": "assets/r1/common/locked.svg",
+          "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "species.chemosynth_microbe",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/species/png18-light/chemosynth_microbe.png",
+          "destinationPath": "assets/r1/species/png18-light/chemosynth_microbe.png",
+          "sha256": "40efc9400a4c36b3059ccee5c1d2896dafbef76e701d527cd63b0463aa22affb",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/species/png18-dark/chemosynth_microbe.png",
+          "destinationPath": "assets/r1/species/png18-dark/chemosynth_microbe.png",
+          "sha256": "a779272f8dda217b44142ac07824c512cb1f8184479aaa9945078b33e35e11a0",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.selected",
+          "sourcePath": "assets/staging/species/svg20-selected/chemosynth_microbe.svg",
+          "destinationPath": "assets/r1/species/svg20-selected/chemosynth_microbe.svg",
+          "sha256": "d78fa6dd4bd8141ebb3cf4eed1e46e7ae2a2114dbb46c02522a9a7d6ab3a15f2",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "species.photo_microbe",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/species/png18-light/photo_microbe.png",
+          "destinationPath": "assets/r1/species/png18-light/photo_microbe.png",
+          "sha256": "8a3b005b4efcbf377f3972931cb1a1839c70388a579aceaa1fd456ea6c65d30d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/species/png18-dark/photo_microbe.png",
+          "destinationPath": "assets/r1/species/png18-dark/photo_microbe.png",
+          "sha256": "496f09b939607c01aa6b439e59d6a5544d1cc1c4a9e40ef19633984f82480b9d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.selected",
+          "sourcePath": "assets/staging/species/svg20-selected/photo_microbe.svg",
+          "destinationPath": "assets/r1/species/svg20-selected/photo_microbe.svg",
+          "sha256": "1f4f8d34d8c772af11f41f288fc73283b3760fb7de86f4f879c2cd45b3249b71",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "species.grazer",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/species/png18-light/grazer.png",
+          "destinationPath": "assets/r1/species/png18-light/grazer.png",
+          "sha256": "39fdf393e9baddd079006f10c320491b4084cc4cf332a05bf65fd3a36c384f3e",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/species/png18-dark/grazer.png",
+          "destinationPath": "assets/r1/species/png18-dark/grazer.png",
+          "sha256": "604d5db81031f3b88a314372f3cb57969852b66c84460c9992fc675b96834fba",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.selected",
+          "sourcePath": "assets/staging/species/svg20-selected/grazer.svg",
+          "destinationPath": "assets/r1/species/svg20-selected/grazer.svg",
+          "sha256": "4169c507af9b691207bbda4512040d8e20629e579f8992c00108d869e48d39b5",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "species.predator",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/species/png18-light/predator.png",
+          "destinationPath": "assets/r1/species/png18-light/predator.png",
+          "sha256": "3b0bb12fb3b3aab6093114898b8a7ae8737120d9e3769a019b176d85613291da",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/species/png18-dark/predator.png",
+          "destinationPath": "assets/r1/species/png18-dark/predator.png",
+          "sha256": "4b262cd16513e57aa54f44986360fd23c7c10356ba9625d7b7d07767d90f6e91",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.selected",
+          "sourcePath": "assets/staging/species/svg20-selected/predator.svg",
+          "destinationPath": "assets/r1/species/svg20-selected/predator.svg",
+          "sha256": "1d296350fe824d87c1ad31752ffc867ad117b5a7462cbed62593e8f18d6be1cc",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "species.decomposer",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/species/png18-light/decomposer.png",
+          "destinationPath": "assets/r1/species/png18-light/decomposer.png",
+          "sha256": "914578e0b8e08fc239b5a2b8222b65d5e45bf2e777910ccf7ad96008a457f164",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/species/png18-dark/decomposer.png",
+          "destinationPath": "assets/r1/species/png18-dark/decomposer.png",
+          "sha256": "aec1b6afae1d496dee208bcaff2aaf0d7df60dda4dd9a00c2ce6aa297927dcb3",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.selected",
+          "sourcePath": "assets/staging/species/svg20-selected/decomposer.svg",
+          "destinationPath": "assets/r1/species/svg20-selected/decomposer.svg",
+          "sha256": "c535494fbd50a876baa665c9240f52b8e9062131a2c6c5386082a9e9915af0b5",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "species.coastal_colony",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/species/png18-light/coastal_colony.png",
+          "destinationPath": "assets/r1/species/png18-light/coastal_colony.png",
+          "sha256": "4fd86597567c859d81fdcc2409f5173e3a91b8dea560441cf281ab9ea5318654",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/species/png18-dark/coastal_colony.png",
+          "destinationPath": "assets/r1/species/png18-dark/coastal_colony.png",
+          "sha256": "3375573376498791cd67443dd67ae1c15bf735577683f8c85ead50699551bedf",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.selected",
+          "sourcePath": "assets/staging/species/svg20-selected/coastal_colony.svg",
+          "destinationPath": "assets/r1/species/svg20-selected/coastal_colony.svg",
+          "sha256": "0d8a620b78b985d8b7dc0c79562aa2bc2ce02d85d37c355a32000bd26747e593",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "species.macroalgae",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/species/png18-light/macroalgae.png",
+          "destinationPath": "assets/r1/species/png18-light/macroalgae.png",
+          "sha256": "22a04cfe6c11405c75ca1892c2a7862f11967823d5be53964df726a3da16cabd",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/species/png18-dark/macroalgae.png",
+          "destinationPath": "assets/r1/species/png18-dark/macroalgae.png",
+          "sha256": "b1a65daced180f6920486a11817f54df76ce3428957fd69a345ea315d4ba1724",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.selected",
+          "sourcePath": "assets/staging/species/svg20-selected/macroalgae.svg",
+          "destinationPath": "assets/r1/species/svg20-selected/macroalgae.svg",
+          "sha256": "fad4b9d2f07822bbcadcad6386fe1adeabe9a80ef91249b48a2d54089f7413be",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "species.sponge",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/species/png18-light/sponge.png",
+          "destinationPath": "assets/r1/species/png18-light/sponge.png",
+          "sha256": "5e3f8b75b917998f06fbdc88172d8aac2b1e0b4007b3a3fc1e029f0e1b890f02",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/species/png18-dark/sponge.png",
+          "destinationPath": "assets/r1/species/png18-dark/sponge.png",
+          "sha256": "b3a3f0435cc2d32d57b628446f58f0447b22aec621a9479a3ae00b86ef82f479",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.selected",
+          "sourcePath": "assets/staging/species/svg20-selected/sponge.svg",
+          "destinationPath": "assets/r1/species/svg20-selected/sponge.svg",
+          "sha256": "ee59b45dde2bb9b308fc380b22abf5c77ed74640aff14b5f2e186474baf79d6e",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "species.cnidarian",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/species/png18-light/cnidarian.png",
+          "destinationPath": "assets/r1/species/png18-light/cnidarian.png",
+          "sha256": "ef82638f8596f450d92da00bb46d882726e743689e985859e4d59389b17c3499",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/species/png18-dark/cnidarian.png",
+          "destinationPath": "assets/r1/species/png18-dark/cnidarian.png",
+          "sha256": "7836e33bce1ec8212c0a705bf4ccf42db240d8a332f91ba200ff8425496dbdee",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "default.selected",
+          "sourcePath": "assets/staging/species/svg20-selected/cnidarian.svg",
+          "destinationPath": "assets/r1/species/svg20-selected/cnidarian.svg",
+          "sha256": "cc4083a2ac4367d5a1ed3cfc1d43681a29b1e6631aa26c9d2d6737dccd1adc0f",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "status.oxygen",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/status/svg20-light/oxygen.svg",
+          "destinationPath": "assets/r1/status/svg20-light/oxygen.svg",
+          "sha256": "b9ed051e3ae5d412ced30c6aa999a0f57f90e678f721b104844a6e9ab9b70c83",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/status/svg20-dark/oxygen.svg",
+          "destinationPath": "assets/r1/status/svg20-dark/oxygen.svg",
+          "sha256": "2b73f5d0591efc262f5c94e8acb2cb30815b87d7ce8e3ac6fd81026baba27bf5",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "status.energy",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/status/svg20-light/energy.svg",
+          "destinationPath": "assets/r1/status/svg20-light/energy.svg",
+          "sha256": "4da993c9addd844bc5745a07ec254a68addda13704eee3ca5cfb2672144899f0",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/status/svg20-dark/energy.svg",
+          "destinationPath": "assets/r1/status/svg20-dark/energy.svg",
+          "sha256": "4e20b53cf23230342384b7081738b04de85fe307086ae461fbe41a4db64af9c6",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "status.insight",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/status/svg20-light/insight.svg",
+          "destinationPath": "assets/r1/status/svg20-light/insight.svg",
+          "sha256": "51b06859c122c9c6d4fe8f102c2258f87db3a5932405c4708f20f70499cc785b",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/status/svg20-dark/insight.svg",
+          "destinationPath": "assets/r1/status/svg20-dark/insight.svg",
+          "sha256": "6df4e1faf25e17a985b3b3f2cd8d41a19446cdb338e03a4d6c1492d7428762d2",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "ui.tab.world",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/tabs/svg20-light/world.svg",
+          "destinationPath": "assets/r1/tabs/svg20-light/world.svg",
+          "sha256": "61857e1a0716d7595fa83c69cb0de53d2d90b8fd15a4b6bf493dd46acf2c301c",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/tabs/svg20-dark/world.svg",
+          "destinationPath": "assets/r1/tabs/svg20-dark/world.svg",
+          "sha256": "a67694b110e5e80311317ab3f25a46a5f89440a5bb6b40c9b8ff2a43e5d140f9",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "ui.tab.lab",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/tabs/svg20-light/lab.svg",
+          "destinationPath": "assets/r1/tabs/svg20-light/lab.svg",
+          "sha256": "04eeddde69f452ad74a9aa2d536549dec7a668b8b1d8b7314b11065470870a18",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/tabs/svg20-dark/lab.svg",
+          "destinationPath": "assets/r1/tabs/svg20-dark/lab.svg",
+          "sha256": "48b5466eda08c8509d193662debc9c01495b23ae4ad0b37c79b9ae154f5695c3",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "ui.tab.evo",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/tabs/svg20-light/evo.svg",
+          "destinationPath": "assets/r1/tabs/svg20-light/evo.svg",
+          "sha256": "7d62f78e3a3ec7558509dca2c4390f507e14697ed07e5ec2aa7351bd38e359df",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/tabs/svg20-dark/evo.svg",
+          "destinationPath": "assets/r1/tabs/svg20-dark/evo.svg",
+          "sha256": "0bfe729917571936944acfcfc0dce383824e653a74d48c71bbb0907b1da140e7",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "key": "ui.tab.log",
+      "sourceRightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "rightsStatus": "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT",
+      "variants": [
+        {
+          "variant": "light.default",
+          "sourcePath": "assets/staging/tabs/svg20-light/log.svg",
+          "destinationPath": "assets/r1/tabs/svg20-light/log.svg",
+          "sha256": "71ff1e1e8646b3cfe66f4e8a45d52e438e795cbe3a6da0db2fcd8940d73a427d",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        },
+        {
+          "variant": "dark.default",
+          "sourcePath": "assets/staging/tabs/svg20-dark/log.svg",
+          "destinationPath": "assets/r1/tabs/svg20-dark/log.svg",
+          "sha256": "8efa80da3f71d9cbb190be51117878273ce85d411d5497e6cd65d2f16c02295c",
+          "runtimeStatus": "APPROVED_FOR_DRAFT",
+          "missing": false
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    "status.growth",
+    "status.decline",
+    "status.discovery",
+    "status.warning",
+    "status.experiment",
+    "status.compare",
+    "status.graph",
+    "status.origin_data",
+    "status.nutrients",
+    "status.predation",
+    "status.decomposition",
+    "status.photosynthesis",
+    "status.respiration",
+    "status.shelter",
+    "status.population",
+    "status.filter_feeding",
+    "status.save",
+    "status.restore",
+    "status.lock",
+    "status.unlock",
+    "status.info",
+    "status.success",
+    "status.pause",
+    "status.play",
+    "status.reset",
+    "ui.component.slot_empty",
+    "ui.component.slot_selected",
+    "ui.component.slot_complete",
+    "ui.component.button_default",
+    "ui.component.button_hover",
+    "ui.component.button_active",
+    "ui.component.button_disabled",
+    "ui.component.card_info",
+    "ui.component.card_discovery",
+    "ui.component.research_panel",
+    "ui.component.comparison_a",
+    "ui.component.comparison_b",
+    "ui.component.legend_producer",
+    "ui.component.legend_grazer",
+    "ui.component.legend_predator",
+    "ui.component.legend_decomposer",
+    "ui.component.progress_track",
+    "ui.component.progress_fill",
+    "ui.component.badge_warning",
+    "ui.component.badge_info",
+    "ui.component.badge_success"
+  ],
+  "logo": "EXCLUDED"
+}
