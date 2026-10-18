@@ -1,6 +1,6 @@
-/* v3 canonical store. Legacy keys are read-only; every replacement is recoverable. */
+/* v4 canonical store. Legacy keys are read-only; every replacement is recoverable. */
 (function (root) {
-  const KEY = "originLab.save.v3",
+  const KEY = "originLab.save.v4",
     JOURNAL = KEY + ".commit.",
     BACKUP = KEY + ".backup.";
   const uuid = () => crypto.randomUUID();
@@ -28,6 +28,11 @@
     }
     legacyBackups() {
       return [
+        ...this.keys("originLab.save.v3.backup."),
+        ...this.keys("originLab.save.v3.commit."),
+        ...(this.read("originLab.save.v3") === null
+          ? []
+          : ["originLab.save.v3"]),
         ...this.keys("originLab.save.backup."),
         ...this.keys("originLab.save.v1-backup"),
       ];
@@ -50,8 +55,8 @@
       try {
         this.base = this.read(KEY);
         if (this.base !== null) {
-          const current = this.candidate(this.base, "v0.2 정본");
-          if (current.status !== "ok" || current.fromVersion !== 3)
+          const current = this.candidate(this.base, "v0.3 정본");
+          if (current.status !== "ok" || current.fromVersion !== 4)
             return this.fail(
               current.reason || "정본 스키마가 올바르지 않습니다.",
               [current],
@@ -80,9 +85,69 @@
             return { ...current, notes: [this.message] };
           }
           this.blocked = false;
-          this.message = "v0.2 정본을 불러왔습니다.";
+          this.message = "v0.3 정본을 불러왔습니다.";
           return current;
         }
+        // Once a v3 canonical exists, older v1/v2 writers have no authority.
+        // Its whole branch set is read-only input, including unresolved commits.
+        const rawV3 = this.read("originLab.save.v3");
+        if (rawV3 !== null) {
+          const head = this.candidate(rawV3, "v0.2 정본 (읽기 전용)");
+          const history = this.keys("originLab.save.v3.commit.").map((k) =>
+            this.candidate(this.read(k), k),
+          );
+          for (const entry of [head, ...history])
+            this.backup(entry.raw, "v3-original");
+          if (head.status !== "ok" || head.fromVersion !== 3)
+            return this.fail(
+              "v3 정본을 안전하게 이전할 수 없습니다. 백업에서 복구하세요.",
+              [head, ...history],
+            );
+          const meta = JSON.parse(rawV3);
+          if (!meta.commitId || !Array.isArray(meta.ancestors))
+            return this.fail(
+              "v3 저장 이력을 확인할 수 없습니다. 이전할 기록을 직접 선택하세요.",
+              [head, ...history],
+            );
+          const divergent = history.filter((x) => {
+            if (x.status !== "ok") return true;
+            const m = JSON.parse(x.raw);
+            return (
+              m.commitId !== meta.commitId &&
+              !meta.ancestors.includes(m.commitId)
+            );
+          });
+          if (divergent.length)
+            return this.fail(
+              "v3 저장 이력이 충돌합니다. 이전할 기록을 선택하세요.",
+              [head, ...divergent],
+            );
+          if (
+            this.keys(JOURNAL).length ||
+            this.keys(BACKUP).some((k) => !k.endsWith("v3-original"))
+          )
+            return this.fail(
+              "v4 복구 기록이 남아 있습니다. 이전을 반복하지 않고 복구를 요청합니다.",
+              [head, ...this.list()],
+            );
+          if (!this.save(head.state)) return this.fail(this.message, [head]);
+          return {
+            ...head,
+            notes: [
+              "v3 원본과 이력을 백업한 뒤 v4 정본으로 이전했습니다. 구버전 저장은 읽기 전용입니다.",
+            ],
+          };
+        }
+        const newerRecovery = [
+          ...this.keys(BACKUP),
+          ...this.keys("originLab.save.v3.commit."),
+          ...this.keys("originLab.save.v3.backup."),
+        ];
+        if (newerRecovery.length)
+          return this.fail(
+            "최신 정본은 없지만 복구 기록이 남아 있습니다. 구버전으로 돌아가지 않고 복구를 요청합니다.",
+            newerRecovery.map((k) => this.candidate(this.read(k), k)),
+          );
         const legacy = ["originLab.save", "originLab.save.v2"]
           .map((k) => ({ key: k, raw: this.read(k) }))
           .filter((x) => x.raw !== null);
@@ -124,7 +189,7 @@
           status: "ok",
           state,
           fromVersion: candidates[0].fromVersion,
-          notes: ["구버전 원본을 백업하고 v3 정본으로 이전했습니다."],
+          notes: ["구버전 원본을 백업하고 v4 정본으로 이전했습니다."],
         };
       } catch (e) {
         return this.fail("저장 읽기·백업·이전에 실패했습니다: " + e.message);
@@ -154,7 +219,7 @@
         const envelope = JSON.parse(this.encode(state));
         Object.assign(envelope, {
           format: "origin-lab",
-          schemaVersion: 3,
+          schemaVersion: 4,
           commitId: uuid(),
           parent: previous?.commitId ?? null,
           ancestors: previous

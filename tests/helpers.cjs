@@ -6,15 +6,27 @@ function core(baseline = false) {
     "utf8",
   );
   if (!baseline)
-    js = js.replace(
-      "/* CHAPTER_MODULE */",
-      fs.readFileSync("src/chapter.js", "utf8"),
-    );
+    js = js
+      .replace(
+        "/* CHAPTER_MODULE */",
+        fs.readFileSync("src/chapter.js", "utf8"),
+      )
+      .replace(
+        "/* RESEARCH_MODULE */",
+        fs.readFileSync("src/research.js", "utf8"),
+      )
+      .replace(
+        "/* RESEARCH_UI_MODULE */",
+        fs.readFileSync("src/research-ui.js", "utf8"),
+      )
+      .replace("/* ASSET_MODULE */", fs.readFileSync("src/assets.js", "utf8"));
   js =
     js.slice(0, js.indexOf("  var Wt =")) +
-    `globalThis.core={le,Pt,Je,Re,Ye,Xe,yt,Ze,Ht,Kt,Bt,Ut,nt,Ft,jt,Rt,It,ze,Ut,_t,U,Se,Y,I,C,g,S,$,Et${baseline ? "" : ",enterChapter,observeChapter,chapterAction,storageManager"}};})();`;
+    `globalThis.core={le,Pt,Je,Re,Ye,Xe,yt,Ze,Ht,Kt,Bt,Ut,nt,Ft,jt,Rt,It,ze,Ut,_t,U,Se,Y,I,C,g,S,$,Et${baseline ? "" : ",enterChapter,observeChapter,chapterAction,storageManager,automationRate,automationTick,researchSnapshot,prepareResearch,runComparison,researchMetrics,RESEARCH_METRICS,makeResearchNote,normalizeResearchNotes,researchAvailability,stepResearch,researchTotals,applyResearchCondition,researchChart,getAsset"}};})();`;
   const ctx = {
     console,
+    setTimeout,
+    clearTimeout,
     structuredClone,
     URLSearchParams,
     crypto: require("node:crypto").webcrypto,

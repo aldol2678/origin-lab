@@ -328,3 +328,30 @@ dialog {max-height:90dvh;overflow:auto;width:min(540px,calc(100vw - 24px));}
 
 #storage-status {width:min(1200px,calc(100% - 24px));flex-shrink:0;}
 #storage-status span {flex:1 1 120px;}
+
+/* v0.3 laboratory: HTML labels, measured SVG lines, no new art. */
+.research-label {display:block;font-size:13px;font-weight:650;margin:12px 0 5px;}
+#research-card select {font:inherit;width:100%;min-width:0;min-height:44px;padding:8px 5px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;}
+.research-check {display:flex;align-items:center;gap:8px;font-size:13px;margin:12px 0;cursor:pointer;min-height:44px;}
+.research-check input {flex:none;width:44px;height:44px;margin:0;accent-color:var(--accent);}
+.research-actions {display:flex;flex-wrap:wrap;gap:6px;margin:12px 0;}
+.research-actions .btn {flex:1 1 125px;}
+.research-help summary,.research-populations summary,.research-note summary {cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--accent);font-size:14px;font-weight:650;}
+.research-note {border-top:1px solid var(--line);margin-top:10px;padding-top:6px;}
+.research-figure {margin:14px 0;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px;}
+.research-figure figcaption span {display:block;font-size:12px;color:var(--muted);}
+.research-figure svg {display:block;width:100%;height:auto;overflow:visible;margin-top:10px;}
+.research-figure text {fill:var(--ink);font-size:16px;font-variant-numeric:tabular-nums;}
+.research-legend {display:flex;flex-wrap:wrap;gap:8px;font-size:12px;margin-top:8px;font-weight:650;}
+.arm-a {color:#176f6c;} .arm-b {color:#9d4e14;}
+.chart-a {stroke:#176f6c;fill:none;stroke-width:3;}
+.chart-b {stroke:#9d4e14;fill:none;stroke-width:3;stroke-dasharray:7 4;}
+.chart-axis {stroke:var(--muted);fill:none;stroke-width:1;}
+.chart-grid {stroke:var(--line);fill:none;stroke-width:1;}
+.research-table {width:100%;table-layout:fixed;border-collapse:collapse;font-size:12px;font-variant-numeric:tabular-nums;margin:8px 0;}
+.research-table caption {text-align:left;font-weight:650;margin-bottom:5px;color:var(--muted);}
+.research-table th,.research-table td {padding:6px 3px;border-bottom:1px solid var(--line);text-align:right;overflow-wrap:anywhere;}
+.research-table th:first-child {text-align:left;} .research-populations th:first-child {width:55%;}
+#research-card {border-color:var(--accent);}
+@media(prefers-color-scheme:dark){.arm-a{color:#72d2ca}.arm-b{color:#ffc58a}.chart-a{stroke:#72d2ca}.chart-b{stroke:#ffc58a}}
+.optional-asset { width:20px; height:20px; object-fit:contain; flex-shrink:0; vertical-align:middle; margin-inline-end:5px; }

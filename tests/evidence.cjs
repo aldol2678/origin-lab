@@ -3,8 +3,8 @@ const fs = require("node:fs"),
   { core, MemoryStorage } = require("./helpers.cjs");
 const sha = (raw) => createHash("sha256").update(raw).digest("hex");
 const evidence = [];
-for (const version of [1, 2]) {
-  const old = core(true),
+for (const version of [1, 2, 3]) {
+  const old = version === 3 ? require("./v02-helpers.cjs").core() : core(true),
     c = core(),
     storage = new MemoryStorage(),
     state = old.le();
@@ -28,11 +28,20 @@ for (const version of [1, 2]) {
     for (let i = 0; i < 60; i++) old.ze(sim);
     old.jt({ ...state, finalResearchDone: false }, sim);
   } // separate records below share the same experiment object
-  const raw = JSON.stringify({ schemaVersion: version, savedAt: 123, state });
-  const key = version === 1 ? "originLab.save" : "originLab.save.v2";
-  storage.setItem(key, raw);
+  let raw = JSON.stringify({ schemaVersion: version, savedAt: 123, state });
+  const key =
+    version === 1
+      ? "originLab.save"
+      : version === 2
+        ? "originLab.save.v2"
+        : "originLab.save.v3";
+  if (version === 3) {
+    old.Pt(storage);
+    old.Je(storage, state);
+    raw = storage.getItem(key);
+  } else storage.setItem(key, raw);
   const loaded = c.Pt(storage);
-  const canonical = storage.getItem("originLab.save.v3");
+  const canonical = storage.getItem("originLab.save.v4");
   const checks = {};
   for (const field of [
     "discovered",
@@ -56,9 +65,11 @@ for (const version of [1, 2]) {
   stale.totalTicks = 99999999;
   stale.rebirths = 30;
   old.Je(storage, stale);
-  const after = storage.getItem("originLab.save.v3");
+  const after = storage.getItem("originLab.save.v4");
+  require("node:assert/strict").equal(canonical, after);
+  require("node:assert/strict").ok(Object.values(checks).every((x) => x.equal));
   evidence.push({
-    scenario: `synthetic v${version} migration then old-v2 writer`,
+    scenario: `synthetic v${version} migration then legacy writer`,
     rawSha256: sha(raw),
     legacySourceBackedUp: [...storage.data.values()].includes(raw),
     checks,

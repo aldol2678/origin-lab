@@ -1,16 +1,18 @@
 {
-  "name": "origin-lab-v0.2",
-  "version": "0.2.0",
+  "name": "origin-lab",
+  "version": "0.3.0",
   "description": "기원의 실험실: 독립 HTML 생태계 발견 게임",
   "directories": {
     "test": "tests"
   },
   "scripts": {
     "build": "node build.cjs",
-    "test": "node tests/reproduce-legacy.cjs && node --test tests/core.test.cjs",
-    "test:browser": "node build.cjs && node tests/browser.cjs",
+    "test": "node tests/reproduce-legacy.cjs && node --test tests/v02-core.test.cjs tests/core.test.cjs tests/v03.test.cjs tests/assets.test.cjs && node tests/balance.cjs",
+    "test:browser": "node build.cjs && node tests/v02-browser.cjs && node tests/browser.cjs && node tests/v03-ui.cjs",
     "check": "npm test && npm run test:browser",
-    "test:evidence": "node tests/evidence.cjs"
+    "test:evidence": "node tests/evidence.cjs",
+    "audit:public": "node tools/public-audit.cjs",
+    "test:balance": "node tests/balance.cjs"
   },
   "keywords": [],
   "type": "commonjs",
