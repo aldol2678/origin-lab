@@ -355,3 +355,8 @@ dialog {max-height:90dvh;overflow:auto;width:min(540px,calc(100vw - 24px));}
 #research-card {border-color:var(--accent);}
 @media(prefers-color-scheme:dark){.arm-a{color:#72d2ca}.arm-b{color:#ffc58a}.chart-a{stroke:#72d2ca}.chart-b{stroke:#ffc58a}}
 .optional-asset { width:20px; height:20px; object-fit:contain; flex-shrink:0; vertical-align:middle; margin-inline-end:5px; }
+
+/* Optional artwork replaces the tab glyph only after successful decoding. */
+.optional-asset[hidden], .asset-replaced {display:none !important;}
+.tabbar .optional-asset {margin:0;}
+.hud-stats dt .optional-asset {margin-inline-end:3px;}

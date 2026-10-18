@@ -20,3 +20,11 @@ Reproduce the text/path scan with `node tools/public-audit.cjs` after staging th
 The additional public set contains only the v0.3 implementation, optional empty asset manifest, build adapter, synthetic-fixture tests, design/asset/QA documentation and selected game screenshots. No original task handoff, private Drive link, player-save JSON, generated execution log or full archive is included. The inline Canvas/SVG fallback remains from the prior game. Empty SVG test slots contain no artwork. No fonts, logos, sprites or external graphic content were authored or fetched. Approved asset metadata is an integration contract; the shipped manifest has zero entries.
 
 The screenshots show synthetic test ecosystems and no user/account data. The repository continues to use read-only build/test CI, Draft review and the existing WIP wording. No LICENSE, release, deployment or main merge was added.
+
+## Gate G3 · Asset Kit v1.1 R1
+
+The incremental public set includes 106 unmodified small SVG/PNG files for 48 supported keys, the source/integration metadata ledger, manifest hashes, adapter fixes, import/verification tools, synthetic tests, reviewed screenshots and this task's documentation. The source archive and registry were verified against pinned hashes. The original registry remains unchanged; the ledger distinguishes original approval from Draft integration approval and release approval.
+
+The ten discoveries with unknown external provenance are absent from the runtime manifest, asset directory and inline build. The other 46 unsupported keys have metadata only; their artwork is excluded. No original archive, original R2 drawings, large illustrations, contact sheets, logo, font, private Drive links or original task/approval handoffs are published. The earlier G1/G2 descriptions above refer to those historical submissions; the current branch adds only the reviewed R1 subset.
+
+The requested integration specification file was unavailable. Exact compliance with that missing file remains blocked; public scope follows the visible user request and verified source records. No new license, release, deployment or merge is introduced. Current schema, catalog, simulation and reward code remain byte-identical to the PR #2 baseline. New captures show synthetic state only.

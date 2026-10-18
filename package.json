@@ -7,12 +7,13 @@
   },
   "scripts": {
     "build": "node build.cjs",
-    "test": "node tests/reproduce-legacy.cjs && node --test tests/v02-core.test.cjs tests/core.test.cjs tests/v03.test.cjs tests/assets.test.cjs && node tests/balance.cjs",
-    "test:browser": "node build.cjs && node tests/v02-browser.cjs && node tests/browser.cjs && node tests/v03-ui.cjs",
+    "test": "node tests/reproduce-legacy.cjs && node --test tests/v02-core.test.cjs tests/core.test.cjs tests/v03.test.cjs tests/assets.test.cjs tests/r1-assets.test.cjs && node tests/balance.cjs",
+    "test:browser": "node build.cjs && node tests/v02-browser.cjs && node tests/browser.cjs && node tests/v03-ui.cjs && node tests/r1-browser.cjs",
     "check": "npm test && npm run test:browser",
     "test:evidence": "node tests/evidence.cjs",
-    "audit:public": "node tools/public-audit.cjs",
-    "test:balance": "node tests/balance.cjs"
+    "audit:public": "node tools/public-audit.cjs && node tools/verify-r1.cjs",
+    "test:balance": "node tests/balance.cjs",
+    "test:assets": "node --test tests/assets.test.cjs tests/r1-assets.test.cjs && node tools/verify-r1.cjs"
   },
   "keywords": [],
   "type": "commonjs",

@@ -1,4 +1,4 @@
-/* Optional artwork adapter. No artwork is supplied by this implementation. */
+/* Optional artwork adapter. Reviewed local assets are inlined at build time. */
 const ASSET_MANIFEST = /* BUILD_ASSET_MANIFEST */ { version: 1, assets: {} };
 const ASSET_STATES = [
   "default",
@@ -7,17 +7,17 @@ const ASSET_STATES = [
   "selected",
   "disabled",
 ];
+const assetThemeQuery =
+  typeof window !== "undefined"
+    ? window.matchMedia("(prefers-color-scheme: dark)")
+    : null;
 function getAsset(key, variant = {}) {
   const requested = typeof variant === "string" ? { state: variant } : variant;
   const state = ASSET_STATES.includes(requested.state)
     ? requested.state
     : "default";
   const theme =
-    requested.theme ||
-    (typeof window !== "undefined" &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light");
+    requested.theme || (assetThemeQuery?.matches ? "dark" : "light");
   const variants = ASSET_MANIFEST.assets[key];
   if (!variants) return null;
   // Locked discoveries never show a revealed image through a fallback variant.
@@ -34,9 +34,19 @@ function getAsset(key, variant = {}) {
   return null;
 }
 const assetImageCache = new Map();
+const failedAssetSources = new Set();
+function assetFailed(src, key) {
+  if (!failedAssetSources.has(src))
+    console.warn(
+      "Optional image could not be decoded; fallback retained:",
+      key,
+    );
+  failedAssetSources.add(src);
+}
+
 function assetImage(key, variant) {
   const asset = getAsset(key, variant);
-  if (!asset) return null;
+  if (!asset || failedAssetSources.has(asset.src)) return null;
   let image = assetImageCache.get(asset.src);
   if (!image) {
     image = new Image();
@@ -47,10 +57,7 @@ function assetImage(key, variant) {
     image.src = asset.src;
     assetImageCache.set(asset.src, image);
     image.onerror = () => {
-      if (!image.dataset.warned) {
-        console.warn("Optional image could not be decoded:", key);
-        image.dataset.warned = "1";
-      }
+      assetFailed(asset.src, key);
     };
   }
   return image.complete && image.naturalWidth ? image : null;
@@ -66,9 +73,12 @@ Pe.prototype.drawAgent = function (sp, x, y, time) {
   }
   return assetDrawAgent.call(this, sp, x, y, time);
 };
-Ge.prototype.applyAssets = function () {
+Ge.prototype.applyAssets = function (root = document) {
+  if (!root) return;
   const slots = [
-    ...document.querySelectorAll("[data-item],[data-codex],[data-tab]"),
+    ...root.querySelectorAll(
+      "[data-item],[data-codex],button[role=tab][data-tab]",
+    ),
   ];
   for (const el of slots) {
     const id = el.dataset.item || el.dataset.codex;
@@ -90,50 +100,85 @@ Ge.prototype.applyAssets = function () {
     ["hud-energy", "energy"],
     ["hud-insight", "insight"],
   ]) {
-    const value = document.getElementById(id);
-    if (value) applyAssetSlot(value.parentElement, "status." + key, "default");
+    const value = root === document ? document.getElementById(id) : null;
+    if (value)
+      applyAssetSlot(
+        value.parentElement.querySelector("dt"),
+        "status." + key,
+        "default",
+      );
   }
-  const oxygen = document.querySelector("#env-card .bar-row > span");
+  const oxygen = root.querySelector("#env-card .bar-row > span");
   if (oxygen) applyAssetSlot(oxygen, "status.oxygen", "default");
 };
 function applyAssetSlot(el, key, state) {
-  const asset = getAsset(key, { state }),
-    existing = el.querySelector(":scope > img.optional-asset");
-  if (!asset) {
+  if (!el) return;
+  const asset = getAsset(key, { state });
+  const existing = el.querySelector(":scope > img.optional-asset");
+  const fallback = el.querySelector(":scope > svg.ico");
+  const restore = () => fallback?.classList.remove("asset-replaced");
+  // Set identity before loading so late theme/state callbacks cannot reveal an old icon.
+  el.dataset.assetKey = key;
+  el.dataset.assetState = state;
+  if (!asset || failedAssetSources.has(asset.src)) {
     existing?.remove();
+    restore();
     return;
   }
-  if (existing?.src === asset.src) return;
+  if (existing?.getAttribute("src") === asset.src) return;
   existing?.remove();
+  restore();
   const img = document.createElement("img");
   img.className = "optional-asset";
   img.alt = "";
   img.setAttribute("aria-hidden", "true");
   img.width = 20;
   img.height = 20;
-  img.src = asset.src;
+  img.hidden = true;
+  img.onload = () => {
+    if (
+      !img.isConnected ||
+      el.querySelector(":scope > img.optional-asset") !== img
+    )
+      return;
+    // Never show a revealed variant if this slot became locked before the decode completed.
+    if (getAsset(key, { state: el.dataset.assetState })?.src !== asset.src)
+      return;
+    img.hidden = false;
+    fallback?.classList.add("asset-replaced");
+  };
   img.onerror = () => {
-    console.warn("Optional image failed; text fallback retained:", key);
+    assetFailed(asset.src, key);
     img.remove();
+    restore();
   };
   el.prepend(img);
+  img.src = asset.src;
+  if (img.complete && img.naturalWidth) img.onload();
 }
 for (const name of ["renderLab", "renderLog", "renderTabs", "renderWorld"]) {
   const original = Ge.prototype[name];
   Ge.prototype[name] = function (...args) {
     const result = original.apply(this, args);
-    this.applyAssets();
+    this.applyAssets(
+      document.querySelector(
+        {
+          renderLab: "#panel-lab",
+          renderLog: "#panel-log",
+          renderTabs: ".tabbar",
+          renderWorld: "#panel-world",
+        }[name],
+      ),
+    );
     return result;
   };
 }
 if (typeof window !== "undefined") {
   window.OriginLabAssets = Object.freeze({ getAsset });
-  window
-    .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", () => {
-      if (typeof ge !== "undefined") {
-        ge.applyAssets();
-        ge.draw(true);
-      }
-    });
+  assetThemeQuery.addEventListener("change", () => {
+    if (typeof ge !== "undefined") {
+      ge.applyAssets();
+      ge.draw(true);
+    }
+  });
 }

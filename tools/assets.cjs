@@ -1,6 +1,7 @@
 // Build only explicitly approved local artwork. An empty/missing manifest is valid.
 const fs = require("node:fs"),
-  path = require("node:path");
+  path = require("node:path"),
+  crypto = require("node:crypto");
 const states = ["default", "locked", "discovered", "selected", "disabled"];
 const themes = ["default", "light", "dark"];
 function keys(catalog) {
@@ -62,6 +63,13 @@ function bundleAssets(root, allowedKeys) {
         throw Error("Asset path escapes asset directory");
       const bytes = fs.readFileSync(file),
         ext = path.extname(file).slice(1);
+      if (
+        entry.sha256 !== undefined &&
+        (!/^[a-f0-9]{64}$/.test(entry.sha256) ||
+          crypto.createHash("sha256").update(bytes).digest("hex") !==
+            entry.sha256)
+      )
+        throw Error("Asset hash mismatch: " + key + "/" + variant);
       if (bytes.length > 1024 * 1024) throw Error("Asset exceeds 1 MiB");
       if (ext === "svg") {
         const text = bytes.toString("utf8");
