@@ -4,7 +4,7 @@
 
 ## 결과
 
-**실제 연결 58/58, 출처 정정 10/10, 원본 명세 대조 15/15.** 현재 로컬 단위·통합 69 PASS / 0 FAIL, 브라우저 39 PASS / 2 BLOCKED / 0 FAIL. CI는 PR 제출 후 결과를 갱신합니다. 실기기는 UNKNOWN입니다.
+**실제 연결 58/58, 출처 정정 10/10, 원본 명세 대조 15/15.** 현재 로컬 단위·통합 69 PASS / 0 FAIL, 브라우저 39 PASS / 2 BLOCKED / 0 FAIL. 구현 커밋 `01e780e12dffc222f075a973d703d2f9aae09844`의 [GitHub CI](https://github.com/aldol2678/origin-lab/actions/runs/39165417410)는 69개 단위·41개 브라우저 검사 PASS / 0 FAIL입니다. file:// 직접 실행 2개도 CI에서 PASS입니다. 최종 문서 커밋의 결과는 PR checks와 납품 보고서에 기록합니다. 실기기는 UNKNOWN입니다.
 
 기준 PR #3 `feature/assets-v11-r1`의 `589e19cc579923fb19a01725eed42eb26ea39b46`에서 새 `feature/assets-r1-closeout` 브랜치를 만들었습니다. 기존 48개 매핑과 그림을 보존하고 10종 × 두 테마 = SVG 20개를 추가했습니다. 전체 126개 파일은 정본과 바이트가 같으며 총 76,796바이트입니다.
 
@@ -31,12 +31,12 @@
 | A09 | 승인된 standalone·외부 fetch/CDN 0 | build.cjs; tools/assets.cjs | 단일 HTML 인라인, offline context와 실제 조작, 외부 요청 없음; 로컬 file:// 정책 차단은 CI 별도 확인 | PASS | B10; R1B06/R1B07; CI B07 |
 | A10 | 42 발견·34 조합·9종·A/B 3종·노트 유지 | data/catalog.json; src/research*.js (불변) | 기존 전체 단위/엔진·UI 조작 회귀, 세 preset 계산과 노트 reload/delete | PASS | tests/core.test.cjs; tests/v03.test.cjs; U02/U05; source-evidence.json |
 | A11 | v4 저장·v1/v2/v3 이전/복구·충돌/원본 백업 | src/persistence.js (불변) | 기존 migration/import/backup/two-tab 테스트 및 asset 렌더 전후 상태·저장 원문 대조 | PASS | B02/B05/B06; U01; R1B06; tests/evidence.cjs |
-| A12 | npm ci/build/test/browser·공개 감사·CI | package.json; .github/workflows/test.yml | 로컬 설치·69 단위·39 브라우저 PASS/2 정책 BLOCKED·재현 빌드·공개 감사. CI 결과 대기 | UNKNOWN | final-unit.txt; final-browser.txt (ZIP); 최종 PR checks |
+| A12 | npm ci/build/test/browser·공개 감사·CI | package.json; .github/workflows/test.yml | 로컬 설치·69 단위·39 브라우저 PASS/2 정책 BLOCKED·재현 빌드·공개 감사. GitHub CI 69 단위·41 브라우저 PASS | PASS | final-unit.txt; final-browser.txt (ZIP); 최종 PR checks |
 | A13 | 파일 <1MiB·HTML 크기·성능·메모리 비교 | tools/assets.cjs; tests/closeout-browser.cjs | 1MiB 경계/64 viewBox 거부, 번들 전후 크기, 150 draw 및 빈/48/58 CDP heap 측정 | PASS | C03; R1B08; CB04; 아래 측정표 |
 | A14 | 한글 라벨·키보드·스크린리더 구조 보존 | src/assets.js; src/game.js 텍스트 불변 | 기존 이름/aria·키보드 focus 테스트, 이미지 alt 빈 값/aria-hidden, 화면 한국어·배치 검토 | PASS | R1B01/R1B05; U03; source-evidence.json; 화면 캡처 |
 | A15 | 실제 모바일과 에뮬레이션 구분 | 테스트 환경·보고서 | 실제 휴대폰 미사용. Chromium viewport 검사와 실기기 결과를 구별 | UNKNOWN | 이 보고서 UNKNOWN 목록; physicalDevice: UNKNOWN |
 
-모든 15개 조항을 대조했습니다. 현재 A12는 CI 확인 대기, A15는 실기기 미사용으로 UNKNOWN입니다. 나머지 13개는 위에 명시한 검증 범위에서 PASS입니다. 화면의 미학·초보자 식별률·법적 독점권을 자동 테스트 PASS로 보장하지 않습니다.
+모든 15개 조항을 대조했습니다. A01~A14는 PASS이고 A15는 실기기 미사용으로 UNKNOWN입니다. 14개 PASS는 위에 명시한 검증 범위에서 PASS입니다. 화면의 미학·초보자 식별률·법적 독점권을 자동 테스트 PASS로 보장하지 않습니다.
 
 ## 수정한 명세 차이
 
