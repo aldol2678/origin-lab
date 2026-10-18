@@ -3,7 +3,7 @@ const fs = require("node:fs"),
   assert = require("node:assert/strict"),
   crypto = require("node:crypto");
 const { keys, bundleAssets } = require("./assets.cjs");
-const blocked = [
+const initialTen = [
   "water",
   "mineral",
   "atmosphere",
@@ -39,17 +39,23 @@ function verify(root = "assets") {
   );
   assert.deepEqual(
     Object.keys(manifest.assets).sort(),
-    supported.filter((x) => !blocked.includes(x)).sort(),
+    supported.slice().sort(),
   );
   assert.equal(
     ledger.records.filter((x) => x.integration === "OUT_OF_SCOPE").length,
     46,
   );
   assert.equal(ledger.releaseApproved, false);
+  assert.equal(ledger.draftIntegrationApproved, true);
+  assert.equal(ledger.productionDeploymentApproved, false);
+  assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root, "r1-mapping.json"))), require("./r1-mapping.cjs").mapping(manifest, ledger));
   const referenced = new Set();
   for (const [key, variants] of Object.entries(manifest.assets)) {
     const record = ledger.records.find((x) => x.key === key);
-    assert.equal(record.rightsStatus, "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT");
+    assert.equal(record.rightsStatus, initialTen.includes(key)
+      ? "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR"
+      : "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT");
+    assert.equal(record.draftIntegrationApproved, true);
     assert.equal(record.integration, "ENABLED_FOR_DRAFT_REVIEW");
     assert(variants["light.default"] && variants["dark.default"]);
     if (key.startsWith("discovery."))
@@ -78,18 +84,18 @@ function verify(root = "assets") {
   }
   walk(path.join(root, "r1"));
   assert.deepEqual(allFiles.sort(), [...referenced].sort());
-  assert.equal(referenced.size, 106);
-  assert.equal(ledger.files.length, 106);
+  assert.equal(referenced.size, 126);
+  assert.equal(ledger.files.length, 126);
   const result = bundleAssets(root, supported);
   assert.deepEqual(result.warnings, []);
   return {
     supported: 58,
-    enabled: 48,
-    blocked: 10,
+    enabled: 58,
+    blocked: 0,
     unimplemented: 46,
-    files: 106,
+    files: 126,
     externalAssetDependencies: 0,
   };
 }
 if (require.main === module) console.log(JSON.stringify(verify(), null, 2));
-module.exports = { verify, blocked };
+module.exports = { verify, initialTen };

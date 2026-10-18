@@ -1,6 +1,176 @@
 {
   "version": 1,
   "assets": {
+    "discovery.water": {
+      "light.default": {
+        "path": "r1/discoveries/svg20-light/water.svg",
+        "approved": true,
+        "sha256": "e09e0ef7d9b19dfd724e201e15c790994491ac87227e7a50da5a1e3b76483b12"
+      },
+      "dark.default": {
+        "path": "r1/discoveries/svg20-dark/water.svg",
+        "approved": true,
+        "sha256": "37b27bcf0ffe85522a3e42c22145f9eb546dcbf860632a6ec8a7bb7fb98db6f2"
+      },
+      "default.locked": {
+        "path": "r1/common/locked.svg",
+        "approved": true,
+        "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d"
+      }
+    },
+    "discovery.mineral": {
+      "light.default": {
+        "path": "r1/discoveries/svg20-light/mineral.svg",
+        "approved": true,
+        "sha256": "b6c596e510ad00b1991c7b962d91338d013850c8859765a905606e0da2d7a28a"
+      },
+      "dark.default": {
+        "path": "r1/discoveries/svg20-dark/mineral.svg",
+        "approved": true,
+        "sha256": "43c473830026a4a19a0d069d7a1cb516c7cbb7d14b310a0800432087d189ebf9"
+      },
+      "default.locked": {
+        "path": "r1/common/locked.svg",
+        "approved": true,
+        "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d"
+      }
+    },
+    "discovery.atmosphere": {
+      "light.default": {
+        "path": "r1/discoveries/svg20-light/atmosphere.svg",
+        "approved": true,
+        "sha256": "f94e29f45fd3de0ad491767e18e38c40d090563884b199cc510a2b6acdac6415"
+      },
+      "dark.default": {
+        "path": "r1/discoveries/svg20-dark/atmosphere.svg",
+        "approved": true,
+        "sha256": "f94e29f45fd3de0ad491767e18e38c40d090563884b199cc510a2b6acdac6415"
+      },
+      "default.locked": {
+        "path": "r1/common/locked.svg",
+        "approved": true,
+        "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d"
+      }
+    },
+    "discovery.energy": {
+      "light.default": {
+        "path": "r1/discoveries/svg20-light/energy.svg",
+        "approved": true,
+        "sha256": "a8452f43971daacd0d93902a2d246ae4d9abdba8bd06bbd4c3b1a34ce3044d82"
+      },
+      "dark.default": {
+        "path": "r1/discoveries/svg20-dark/energy.svg",
+        "approved": true,
+        "sha256": "d2aa57d582959b6ae7300d5efff866da1a7fc31c8a934e302193086e6ccd0e91"
+      },
+      "default.locked": {
+        "path": "r1/common/locked.svg",
+        "approved": true,
+        "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d"
+      }
+    },
+    "discovery.vapor": {
+      "light.default": {
+        "path": "r1/discoveries/svg20-light/vapor.svg",
+        "approved": true,
+        "sha256": "dd421cb4ba891f81c4097cb9d7d24dc36f42f99d170beb6f83011ced219abb55"
+      },
+      "dark.default": {
+        "path": "r1/discoveries/svg20-dark/vapor.svg",
+        "approved": true,
+        "sha256": "dd421cb4ba891f81c4097cb9d7d24dc36f42f99d170beb6f83011ced219abb55"
+      },
+      "default.locked": {
+        "path": "r1/common/locked.svg",
+        "approved": true,
+        "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d"
+      }
+    },
+    "discovery.cloud": {
+      "light.default": {
+        "path": "r1/discoveries/svg20-light/cloud.svg",
+        "approved": true,
+        "sha256": "a97d65039a56674e67a0a2ff41f32a181e6ba1222c0e10fcdbc68010cd7cb7c6"
+      },
+      "dark.default": {
+        "path": "r1/discoveries/svg20-dark/cloud.svg",
+        "approved": true,
+        "sha256": "829ade83077bb1f5199f3e9092938117ae1758012f00f369ebf130bed9e92ed8"
+      },
+      "default.locked": {
+        "path": "r1/common/locked.svg",
+        "approved": true,
+        "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d"
+      }
+    },
+    "discovery.rain": {
+      "light.default": {
+        "path": "r1/discoveries/svg20-light/rain.svg",
+        "approved": true,
+        "sha256": "23b575d8e67cec02fe1069b8c7c5dbdd236c19630b775987102ab8d51045ac14"
+      },
+      "dark.default": {
+        "path": "r1/discoveries/svg20-dark/rain.svg",
+        "approved": true,
+        "sha256": "ef84dc8609d497b6a42cbba48f0e7d72d965bacaeb6c0cfea72faedf5756447e"
+      },
+      "default.locked": {
+        "path": "r1/common/locked.svg",
+        "approved": true,
+        "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d"
+      }
+    },
+    "discovery.sediment": {
+      "light.default": {
+        "path": "r1/discoveries/svg20-light/sediment.svg",
+        "approved": true,
+        "sha256": "d5eb8aad001c6b7fd0cf9800667f5f8818f84c471a29ea51906a66d4ecf03dd8"
+      },
+      "dark.default": {
+        "path": "r1/discoveries/svg20-dark/sediment.svg",
+        "approved": true,
+        "sha256": "e89ad6de472ce8dda1c2d10a2449e1891d9071e171aa964519c8afc25d918136"
+      },
+      "default.locked": {
+        "path": "r1/common/locked.svg",
+        "approved": true,
+        "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d"
+      }
+    },
+    "discovery.heat": {
+      "light.default": {
+        "path": "r1/discoveries/svg20-light/heat.svg",
+        "approved": true,
+        "sha256": "d4935f87fb90dfb7c9a136e96c9e892894f20140547febc32c4cfc748fac5023"
+      },
+      "dark.default": {
+        "path": "r1/discoveries/svg20-dark/heat.svg",
+        "approved": true,
+        "sha256": "3611db342c515d98bccfb52d2e30b3284d3a0c666df6dc0b691e287a8806e82e"
+      },
+      "default.locked": {
+        "path": "r1/common/locked.svg",
+        "approved": true,
+        "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d"
+      }
+    },
+    "discovery.hydrothermal": {
+      "light.default": {
+        "path": "r1/discoveries/svg20-light/hydrothermal.svg",
+        "approved": true,
+        "sha256": "33760380e657b7e350a5beae315e9ed985712b6c2750000b47a1fe4b8aab264b"
+      },
+      "dark.default": {
+        "path": "r1/discoveries/svg20-dark/hydrothermal.svg",
+        "approved": true,
+        "sha256": "ef5b3b2f121f48ea4d6d928626a5894a29fd6d947dfca08995d2b03105207d1e"
+      },
+      "default.locked": {
+        "path": "r1/common/locked.svg",
+        "approved": true,
+        "sha256": "5534337d76ccd3f3766e65cf708c9f2d711b5ac0031b1f31b67c559cd8dcb60d"
+      }
+    },
     "discovery.nutrients": {
       "light.default": {
         "path": "r1/discoveries/svg20-light/nutrients.svg",

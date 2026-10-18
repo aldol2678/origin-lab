@@ -70,12 +70,12 @@ function bundleAssets(root, allowedKeys) {
             entry.sha256)
       )
         throw Error("Asset hash mismatch: " + key + "/" + variant);
-      if (bytes.length > 1024 * 1024) throw Error("Asset exceeds 1 MiB");
+      if (bytes.length >= 1024 * 1024) throw Error("Asset exceeds 1 MiB");
       if (ext === "svg") {
         const text = bytes.toString("utf8");
         if (
           !/<svg\s/.test(text) ||
-          !/viewBox\s*=/.test(text) ||
+          !/\bviewBox\s*=\s*(["'])0\s+0\s+64\s+64\1/.test(text) ||
           /<(?:script|foreignObject|iframe|image|use|text|style)\b|\bon[a-z]+\s*=|(?:href|src)\s*=|<!ENTITY|<!DOCTYPE|@import|url\s*\(/i.test(
             text,
           )

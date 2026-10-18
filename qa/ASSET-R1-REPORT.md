@@ -1,5 +1,7 @@
 # Asset Kit v1.1 R1 통합 검증 보고서
 
+> **역사 기록:** 아래는 PR #3 당시의 결과입니다. 초기 10종의 보류와 누락 명세 문제는 후속 closeout에서 정정했습니다. 현재 상태는 [A01~A15 보고서](ASSET-R1-INTEGRATION-REPORT.md)와 [출처 감사](../docs/ASSET-R1-PROVENANCE-AUDIT.md)를 참고하세요.
+
 작업: `ASTRA / ORIGIN-LAB-ASSET-INTEGRATION-R1-001` · 2026-10-18
 
 ## 결과와 기준선

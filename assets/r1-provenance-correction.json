@@ -1,0 +1,512 @@
+{
+  "schema": "origin-lab.provenance-correction.r1",
+  "task": "ORIGIN-LAB-ASSET-R1-CLOSEOUT-002",
+  "approvalBasis": "Project designer explicitly authorized public GitHub Draft integration of final R1 initial ten; user message in this task.",
+  "creationHistoryBasis": "Designer attestation: initial artwork generated with ChatGPT image generation at designer request, revised inside project as R2, then flat vector R1. R2 README and asset index corroborate generated/edited images and separate SVG symbols. Detailed generation logs not independently inspected.",
+  "humanDrawnClaim": false,
+  "exclusiveCopyrightClaim": false,
+  "designApproved": true,
+  "draftIntegrationApproved": true,
+  "releaseApproved": false,
+  "productionDeploymentApproved": false,
+  "publicScope": "R1_SMALL_RUNTIME_VARIANTS_ONLY",
+  "r1ArchiveSha256": "d7ca9dc9107f9bb8e1bdda7d53904ac76bb085814ac293ced2a2791c8bd16c11",
+  "handoffArchiveSha256": "3b169e70125a66e839c24a8c65543f5637daeb86c2329313723f2ccf25b40f4a",
+  "r2ArchiveSha256": "84f1d8235641722cfde5f027a936b2b58e181d88a475cfb756dc5122d7fcad75",
+  "r2ArchiveMatchesR1PreservedCopy": true,
+  "r2IndexSha256": "e0c9dd78250063e6e0953254702aac7174fea18e9f3240ec03c2bb6897c7e31b",
+  "r2IndexedFilesVerified": 60,
+  "originalRegistryUnmodified": true,
+  "records": [
+    {
+      "key": "discovery.water",
+      "previousSourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "correctedRightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "auditStatus": "VERIFIED_FOR_REVIEW",
+      "draftIntegrationApproved": true,
+      "r2Files": [
+        {
+          "path": "illustrations/large/water.png",
+          "bytes": 683695,
+          "sha256": "477c2d59f3837ff1f155cc889ff46c3d609b0a0a0bf84029151c2fcb94d7b564"
+        },
+        {
+          "path": "illustrations/256/water.png",
+          "bytes": 46755,
+          "sha256": "82c0406dec71e39a1955574487dce0cbab8d6962b9ff3934eea3efb7bf2bc567"
+        },
+        {
+          "path": "icons/png64/water.png",
+          "bytes": 5412,
+          "sha256": "02674ac7a0ad88e80bf74e856842d1c090d58abca49899a5189163e46c37ffac"
+        },
+        {
+          "path": "icons/png32/water.png",
+          "bytes": 1950,
+          "sha256": "00cf46bf664bce2b263143f115d7227d606b7b8f7c9f197158f8d644efb3e68c"
+        },
+        {
+          "path": "icons/png20/water.png",
+          "bytes": 985,
+          "sha256": "55f93ac947112ff3f4c826a00bbfe8b62906a0cecd6052c1371ffc9f65679d18"
+        },
+        {
+          "path": "icons/svg/water.svg",
+          "bytes": 526,
+          "sha256": "d305161b45af4369cba1d2fe2e52754fa27eec05130be5fabac129ea0e9f8b3f"
+        }
+      ],
+      "r1Files": [
+        {
+          "path": "assets/staging/discoveries/svg20-light/water.svg",
+          "sha256": "e09e0ef7d9b19dfd724e201e15c790994491ac87227e7a50da5a1e3b76483b12"
+        },
+        {
+          "path": "assets/staging/discoveries/svg20-dark/water.svg",
+          "sha256": "37b27bcf0ffe85522a3e42c22145f9eb546dcbf860632a6ec8a7bb7fb98db6f2"
+        }
+      ]
+    },
+    {
+      "key": "discovery.mineral",
+      "previousSourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "correctedRightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "auditStatus": "VERIFIED_FOR_REVIEW",
+      "draftIntegrationApproved": true,
+      "r2Files": [
+        {
+          "path": "illustrations/large/mineral.png",
+          "bytes": 787342,
+          "sha256": "5f4b97162f313806d086a1286cb09fa5d717cdf44e706c9961229e033a4bf6af"
+        },
+        {
+          "path": "illustrations/256/mineral.png",
+          "bytes": 55072,
+          "sha256": "c8d51c622b9919150bc600d54e37fa49f24d238c8e428983268bd71d57c78739"
+        },
+        {
+          "path": "icons/png64/mineral.png",
+          "bytes": 5833,
+          "sha256": "a2227a726d21f78d18675de2e87a3283ce1a75b10d151f2004ade97337536be0"
+        },
+        {
+          "path": "icons/png32/mineral.png",
+          "bytes": 2002,
+          "sha256": "b566cc3b9761c4a76eef1d9f00e029fc59df9c39a8860cf70e581df97537ed31"
+        },
+        {
+          "path": "icons/png20/mineral.png",
+          "bytes": 1006,
+          "sha256": "e025c176bd003bfd3714295d58cf182b281055290a74687a64ee02535f277821"
+        },
+        {
+          "path": "icons/svg/mineral.svg",
+          "bytes": 513,
+          "sha256": "3fed3da8ccec80f30b640804b092106b68a0ca3c9a9f388f7432364c05947087"
+        }
+      ],
+      "r1Files": [
+        {
+          "path": "assets/staging/discoveries/svg20-light/mineral.svg",
+          "sha256": "b6c596e510ad00b1991c7b962d91338d013850c8859765a905606e0da2d7a28a"
+        },
+        {
+          "path": "assets/staging/discoveries/svg20-dark/mineral.svg",
+          "sha256": "43c473830026a4a19a0d069d7a1cb516c7cbb7d14b310a0800432087d189ebf9"
+        }
+      ]
+    },
+    {
+      "key": "discovery.atmosphere",
+      "previousSourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "correctedRightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "auditStatus": "VERIFIED_FOR_REVIEW",
+      "draftIntegrationApproved": true,
+      "r2Files": [
+        {
+          "path": "illustrations/large/atmosphere.png",
+          "bytes": 801324,
+          "sha256": "844593be17d232bcd0eaed65d06da890f4b7680b62fd0585a473a333d830a168"
+        },
+        {
+          "path": "illustrations/256/atmosphere.png",
+          "bytes": 60886,
+          "sha256": "3674f7568f81287fe35952eaf2b289bb5395f2e85188214cfec029f7d1a3a003"
+        },
+        {
+          "path": "icons/png64/atmosphere.png",
+          "bytes": 6951,
+          "sha256": "a90f3e65b96a64be496bd7b19e6b1525351a3802faee84b1b2dfc5a63d72c69f"
+        },
+        {
+          "path": "icons/png32/atmosphere.png",
+          "bytes": 2286,
+          "sha256": "c0cbe8c9755d5706a8b71ef86ae5faba4d69a20b6f576b2a2169c2b2a4182790"
+        },
+        {
+          "path": "icons/png20/atmosphere.png",
+          "bytes": 1105,
+          "sha256": "edc4e3eabc6ba852f92b881a7c93ea7c94cf2322e23e9056a5037189655dd4d2"
+        },
+        {
+          "path": "icons/svg/atmosphere.svg",
+          "bytes": 521,
+          "sha256": "468add31496f74d1febc3c245776875275277ac088f0476bc4124fae599adbcd"
+        }
+      ],
+      "r1Files": [
+        {
+          "path": "assets/staging/discoveries/svg20-light/atmosphere.svg",
+          "sha256": "f94e29f45fd3de0ad491767e18e38c40d090563884b199cc510a2b6acdac6415"
+        },
+        {
+          "path": "assets/staging/discoveries/svg20-dark/atmosphere.svg",
+          "sha256": "f94e29f45fd3de0ad491767e18e38c40d090563884b199cc510a2b6acdac6415"
+        }
+      ]
+    },
+    {
+      "key": "discovery.energy",
+      "previousSourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "correctedRightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "auditStatus": "VERIFIED_FOR_REVIEW",
+      "draftIntegrationApproved": true,
+      "r2Files": [
+        {
+          "path": "illustrations/large/energy.png",
+          "bytes": 1027307,
+          "sha256": "e445f3d886460485670d778072259feefffdee2c49cc5a91d7314cd844f2d905"
+        },
+        {
+          "path": "illustrations/256/energy.png",
+          "bytes": 66868,
+          "sha256": "86aae7e27a3cfb799ac6f7de29fac1312cf4f284dd1ed0e98aae74b44b76af29"
+        },
+        {
+          "path": "icons/png64/energy.png",
+          "bytes": 6126,
+          "sha256": "957026b389ad6ca809915063aa81aa41e59bd6fa8bffc255b7c2d81378d40768"
+        },
+        {
+          "path": "icons/png32/energy.png",
+          "bytes": 2084,
+          "sha256": "a29dc53ba427f056788851cd5ee58e639753ad4095b37346450b4d2143a974e4"
+        },
+        {
+          "path": "icons/png20/energy.png",
+          "bytes": 1030,
+          "sha256": "9451db08cad113c4abe1c0eafe62609f6c517e6cf050a159d948a239759be1f0"
+        },
+        {
+          "path": "icons/svg/energy.svg",
+          "bytes": 398,
+          "sha256": "ce9d61ba36b88f34abfa76393d5208791ee36c34328c5b40f86c486d2d1e6e6e"
+        }
+      ],
+      "r1Files": [
+        {
+          "path": "assets/staging/discoveries/svg20-light/energy.svg",
+          "sha256": "a8452f43971daacd0d93902a2d246ae4d9abdba8bd06bbd4c3b1a34ce3044d82"
+        },
+        {
+          "path": "assets/staging/discoveries/svg20-dark/energy.svg",
+          "sha256": "d2aa57d582959b6ae7300d5efff866da1a7fc31c8a934e302193086e6ccd0e91"
+        }
+      ]
+    },
+    {
+      "key": "discovery.vapor",
+      "previousSourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "correctedRightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "auditStatus": "VERIFIED_FOR_REVIEW",
+      "draftIntegrationApproved": true,
+      "r2Files": [
+        {
+          "path": "illustrations/large/vapor.png",
+          "bytes": 622238,
+          "sha256": "18f2a1305700b07c9abcc5a7c8ee1eaf97a79980661c7e7eba6fcd82c60c4cab"
+        },
+        {
+          "path": "illustrations/256/vapor.png",
+          "bytes": 45213,
+          "sha256": "93f196fb09d9518f8719868cf456622db5aae04394963cc5cde91c1136b8433d"
+        },
+        {
+          "path": "icons/png64/vapor.png",
+          "bytes": 5154,
+          "sha256": "becd1b95f2b3b025c6d8597f9156823264759624bcdc44d9ca38eb8106542f4e"
+        },
+        {
+          "path": "icons/png32/vapor.png",
+          "bytes": 1732,
+          "sha256": "aa4bd7ff848c5979cb1caec077abbd9beb7794b5513ed4365f25df4fdbcca013"
+        },
+        {
+          "path": "icons/png20/vapor.png",
+          "bytes": 904,
+          "sha256": "693ea74f3e4823e46874003edfae24b102400d37bded3a7a0d9b83d304e3141c"
+        },
+        {
+          "path": "icons/svg/vapor.svg",
+          "bytes": 488,
+          "sha256": "83edcd6420d1f1a4ff7d1caf5f2d582bc0b0f0c0817a13767e564b8d5a6ebe44"
+        }
+      ],
+      "r1Files": [
+        {
+          "path": "assets/staging/discoveries/svg20-light/vapor.svg",
+          "sha256": "dd421cb4ba891f81c4097cb9d7d24dc36f42f99d170beb6f83011ced219abb55"
+        },
+        {
+          "path": "assets/staging/discoveries/svg20-dark/vapor.svg",
+          "sha256": "dd421cb4ba891f81c4097cb9d7d24dc36f42f99d170beb6f83011ced219abb55"
+        }
+      ]
+    },
+    {
+      "key": "discovery.cloud",
+      "previousSourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "correctedRightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "auditStatus": "VERIFIED_FOR_REVIEW",
+      "draftIntegrationApproved": true,
+      "r2Files": [
+        {
+          "path": "illustrations/large/cloud.png",
+          "bytes": 626544,
+          "sha256": "9cc141b55aeb3b6d8f6a0cc1aa7523337062f05e02ceb8c94b77c5378945d1f3"
+        },
+        {
+          "path": "illustrations/256/cloud.png",
+          "bytes": 40478,
+          "sha256": "e5ba9ed2fd3648758a69da263675f8ac8bb8b8e89b2c8298ce7a7c4b01700a16"
+        },
+        {
+          "path": "icons/png64/cloud.png",
+          "bytes": 4720,
+          "sha256": "a181e4cbe1f39272a4d710edaf5ec1689bef15c8c39a9a2fe8329de5f5aeded6"
+        },
+        {
+          "path": "icons/png32/cloud.png",
+          "bytes": 1768,
+          "sha256": "34ff00d4c102f919381801b7055d9fb33e01993d9f8d5dc66f0d1cf17c4fde97"
+        },
+        {
+          "path": "icons/png20/cloud.png",
+          "bytes": 899,
+          "sha256": "c4752e37416ffdefdb935fd378bae6e944dd3eea2387871698c3c750993cf52c"
+        },
+        {
+          "path": "icons/svg/cloud.svg",
+          "bytes": 434,
+          "sha256": "d76045b7a7af7a691cb311305551ee0cfdb73f1a4a964ebdf3c563e00fb2910e"
+        }
+      ],
+      "r1Files": [
+        {
+          "path": "assets/staging/discoveries/svg20-light/cloud.svg",
+          "sha256": "a97d65039a56674e67a0a2ff41f32a181e6ba1222c0e10fcdbc68010cd7cb7c6"
+        },
+        {
+          "path": "assets/staging/discoveries/svg20-dark/cloud.svg",
+          "sha256": "829ade83077bb1f5199f3e9092938117ae1758012f00f369ebf130bed9e92ed8"
+        }
+      ]
+    },
+    {
+      "key": "discovery.rain",
+      "previousSourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "correctedRightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "auditStatus": "VERIFIED_FOR_REVIEW",
+      "draftIntegrationApproved": true,
+      "r2Files": [
+        {
+          "path": "illustrations/large/rain.png",
+          "bytes": 642309,
+          "sha256": "64db909a99a42d1a328268d440b5f11630ebf0aaac7b3261c21b753250d31744"
+        },
+        {
+          "path": "illustrations/256/rain.png",
+          "bytes": 47798,
+          "sha256": "a53fd9cf7aaa38addf9506a95e868721007a48000d7f7ec535179a6ae2effbc4"
+        },
+        {
+          "path": "icons/png64/rain.png",
+          "bytes": 5577,
+          "sha256": "574c865f95c4c3f66510a80692252251b140f1914df195b871f0a6dc7ea308fa"
+        },
+        {
+          "path": "icons/png32/rain.png",
+          "bytes": 1968,
+          "sha256": "9b277fded6fe0a13b9b76a35219d999bb747b5fe8109c0bc863e99e52bcb28c2"
+        },
+        {
+          "path": "icons/png20/rain.png",
+          "bytes": 991,
+          "sha256": "24ffa38ca63393b6c49404f9b4d586d14799764682cd0013290f4ab4389c0afb"
+        },
+        {
+          "path": "icons/svg/rain.svg",
+          "bytes": 480,
+          "sha256": "2a1645e7be825cf9c1fc32f044d11d14bd6765f0866fa1e4a410c0efacab604f"
+        }
+      ],
+      "r1Files": [
+        {
+          "path": "assets/staging/discoveries/svg20-light/rain.svg",
+          "sha256": "23b575d8e67cec02fe1069b8c7c5dbdd236c19630b775987102ab8d51045ac14"
+        },
+        {
+          "path": "assets/staging/discoveries/svg20-dark/rain.svg",
+          "sha256": "ef84dc8609d497b6a42cbba48f0e7d72d965bacaeb6c0cfea72faedf5756447e"
+        }
+      ]
+    },
+    {
+      "key": "discovery.sediment",
+      "previousSourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "correctedRightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "auditStatus": "VERIFIED_FOR_REVIEW",
+      "draftIntegrationApproved": true,
+      "r2Files": [
+        {
+          "path": "illustrations/large/sediment.png",
+          "bytes": 1253710,
+          "sha256": "fb94a94fa3ccad7463d27d62e51329a949851a2b029fbe6e647f48a2ac4cf10a"
+        },
+        {
+          "path": "illustrations/256/sediment.png",
+          "bytes": 74177,
+          "sha256": "9dafd39bd507a37bb14d2aae752045dbb2c397d9c45357bee4e24dd82bf80883"
+        },
+        {
+          "path": "icons/png64/sediment.png",
+          "bytes": 7361,
+          "sha256": "3f2a75b8574da64be8ba8f58486a3fb1189fc34f2dcd4883350a6681770409fb"
+        },
+        {
+          "path": "icons/png32/sediment.png",
+          "bytes": 2447,
+          "sha256": "e2845e372f92da792c46d00f7e23555f62ab6ac71e55b97ecbc6723ea1cd9b84"
+        },
+        {
+          "path": "icons/png20/sediment.png",
+          "bytes": 1192,
+          "sha256": "3d22dbb7eea025fa0205b0af7c3154570bcc8b6ef93a8610607d7d1f68cdb90d"
+        },
+        {
+          "path": "icons/svg/sediment.svg",
+          "bytes": 533,
+          "sha256": "e377776f381f330ea8189bf9e2ccf58395ac30357efa53619ab39423c29a78ad"
+        }
+      ],
+      "r1Files": [
+        {
+          "path": "assets/staging/discoveries/svg20-light/sediment.svg",
+          "sha256": "d5eb8aad001c6b7fd0cf9800667f5f8818f84c471a29ea51906a66d4ecf03dd8"
+        },
+        {
+          "path": "assets/staging/discoveries/svg20-dark/sediment.svg",
+          "sha256": "e89ad6de472ce8dda1c2d10a2449e1891d9071e171aa964519c8afc25d918136"
+        }
+      ]
+    },
+    {
+      "key": "discovery.heat",
+      "previousSourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "correctedRightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "auditStatus": "VERIFIED_FOR_REVIEW",
+      "draftIntegrationApproved": true,
+      "r2Files": [
+        {
+          "path": "illustrations/large/heat.png",
+          "bytes": 859851,
+          "sha256": "b36e9569790012a4cf7376d1efbb7a5d4b1dc6c200890ff7af532e73c668743f"
+        },
+        {
+          "path": "illustrations/256/heat.png",
+          "bytes": 54104,
+          "sha256": "f9d1223660aae79dcfae9ce0110658661d31f45699cabed725a0a9ac3ac7a5c7"
+        },
+        {
+          "path": "icons/png64/heat.png",
+          "bytes": 5703,
+          "sha256": "3b47878ded81a8206c591daad921b5460c73febe1f6f79aa8cb9994ad92aaf1f"
+        },
+        {
+          "path": "icons/png32/heat.png",
+          "bytes": 1924,
+          "sha256": "8d12d3fbd62b4ad29b7f6bb336b180be0b5c23e469be309791afb3938b96fe95"
+        },
+        {
+          "path": "icons/png20/heat.png",
+          "bytes": 987,
+          "sha256": "92d8db5968fd32217f89026a3af25590c8b5d6a95df789f330c4fc772ec2cf3e"
+        },
+        {
+          "path": "icons/svg/heat.svg",
+          "bytes": 482,
+          "sha256": "685663dcf96543b1769caf90f2f6d1fe501860e771541cdff5fd273899193d01"
+        }
+      ],
+      "r1Files": [
+        {
+          "path": "assets/staging/discoveries/svg20-light/heat.svg",
+          "sha256": "d4935f87fb90dfb7c9a136e96c9e892894f20140547febc32c4cfc748fac5023"
+        },
+        {
+          "path": "assets/staging/discoveries/svg20-dark/heat.svg",
+          "sha256": "3611db342c515d98bccfb52d2e30b3284d3a0c666df6dc0b691e287a8806e82e"
+        }
+      ]
+    },
+    {
+      "key": "discovery.hydrothermal",
+      "previousSourceRightsStatus": "USER_SUPPLIED_R2_AND_NEW_VECTOR_DERIVATIVE_EXTERNAL_HISTORY_UNKNOWN",
+      "correctedRightsStatus": "USER_DIRECTED_CHATGPT_GENERATED_PROJECT_REVISED_R1_VECTOR",
+      "auditStatus": "VERIFIED_FOR_REVIEW",
+      "draftIntegrationApproved": true,
+      "r2Files": [
+        {
+          "path": "illustrations/large/hydrothermal.png",
+          "bytes": 868104,
+          "sha256": "bbadc1cd7a146ef9e31af2a7fc4bbf4e3dd2552c6fc8ccb47de45ebd82d6e914"
+        },
+        {
+          "path": "illustrations/256/hydrothermal.png",
+          "bytes": 55190,
+          "sha256": "bdb4904c7e7ff0663ec4dae9f7ac495d14f1cba729c933024fca69d91764d649"
+        },
+        {
+          "path": "icons/png64/hydrothermal.png",
+          "bytes": 5920,
+          "sha256": "5c91e02656ec650865929383261876d32aa924446fc7aa5bf678e189b105610a"
+        },
+        {
+          "path": "icons/png32/hydrothermal.png",
+          "bytes": 2041,
+          "sha256": "6513dda5a559aa06897ea4fe502c607610c42785bc4585dff9feba82e52bc367"
+        },
+        {
+          "path": "icons/png20/hydrothermal.png",
+          "bytes": 1049,
+          "sha256": "ef47c9d24376bee52318fdead3cc0776b4fff5352bf7a1e4f536e6bada9c71d7"
+        },
+        {
+          "path": "icons/svg/hydrothermal.svg",
+          "bytes": 621,
+          "sha256": "8cf39b5c41c491bf58bd4eda9e149aafb926a55368e8d8b2e9755ab8d9e4c1ff"
+        }
+      ],
+      "r1Files": [
+        {
+          "path": "assets/staging/discoveries/svg20-light/hydrothermal.svg",
+          "sha256": "33760380e657b7e350a5beae315e9ed985712b6c2750000b47a1fe4b8aab264b"
+        },
+        {
+          "path": "assets/staging/discoveries/svg20-dark/hydrothermal.svg",
+          "sha256": "ef5b3b2f121f48ea4d6d928626a5894a29fd6d947dfca08995d2b03105207d1e"
+        }
+      ]
+    }
+  ]
+}

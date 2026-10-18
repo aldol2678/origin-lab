@@ -7,6 +7,7 @@ const ARCHIVE_SHA =
   "d7ca9dc9107f9bb8e1bdda7d53904ac76bb085814ac293ced2a2791c8bd16c11";
 const CHECKSUMS_SHA =
   "8182ef5e07b16f7c0d20260ed92bf2e3565c92bd46acdddc88c9626cded5642c";
+const correction = require("../assets/r1-provenance-correction.json");
 const VERIFIED_ORIGIN = "GENERATED_VECTOR_NO_THIRD_PARTY_INPUT";
 const sha = (bytes) => crypto.createHash("sha256").update(bytes).digest("hex");
 function importR1(kit, output) {
@@ -51,7 +52,10 @@ function importR1(kit, output) {
       sourceRegistrySha256: sha(read("manifest/work-asset-register.json")),
       sourceFilesVerified: verifiedFiles,
       designApproved: true,
+      draftIntegrationApproved: true,
       releaseApproved: false,
+      productionDeploymentApproved: false,
+      correctionTask: correction.task,
       originalRegistryUnmodified: true,
       records: [],
       files: [],
@@ -80,13 +84,22 @@ function importR1(kit, output) {
   for (const record of records) {
     if (record.approved !== false)
       throw Error("Original registry approval unexpectedly changed");
-    const eligible =
-      record.runtimeSupported && record.rightsStatus === VERIFIED_ORIGIN;
+    const corrected = correction.records.find((x) => x.key === record.key);
+    if (corrected && (corrected.previousSourceRightsStatus !== record.rightsStatus ||
+        !corrected.draftIntegrationApproved || correction.r1ArchiveSha256 !== ARCHIVE_SHA ||
+        correction.releaseApproved !== false || !correction.draftIntegrationApproved))
+      throw Error("Provenance correction does not match approved source");
+    if (corrected) for (const file of corrected.r1Files)
+      if (sha(read(file.path)) !== file.sha256) throw Error("Corrected source hash mismatch");
+    const eligible = record.runtimeSupported &&
+      (record.rightsStatus === VERIFIED_ORIGIN || !!corrected);
     provenance.records.push({
       key: record.key,
       sourceApproved: record.approved,
       runtimeSupported: record.runtimeSupported,
-      rightsStatus: record.rightsStatus,
+      sourceRightsStatus: record.rightsStatus,
+      rightsStatus: corrected?.correctedRightsStatus || record.rightsStatus,
+      draftIntegrationApproved: eligible,
       integration: eligible
         ? "ENABLED_FOR_DRAFT_REVIEW"
         : record.runtimeSupported
@@ -129,6 +142,8 @@ function importR1(kit, output) {
     path.join(output, "r1-provenance.json"),
     JSON.stringify(provenance, null, 2) + "\n",
   );
+  fs.writeFileSync(path.join(output, "r1-mapping.json"),
+    JSON.stringify(require("./r1-mapping.cjs").mapping(manifest, provenance), null, 2) + "\n");
   const bundled = bundleAssets(output, supported);
   if (bundled.warnings.length)
     throw Error("Selected asset unexpectedly missing");
