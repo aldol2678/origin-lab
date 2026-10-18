@@ -1,0 +1,13 @@
+node_modules/
+*.zip
+*.docx
+.env
+.env.*
+!.env.example
+playwright-report/
+test-results/
+qa/*.json
+qa/*.txt
+qa/screenshots/
+private/
+.DS_Store

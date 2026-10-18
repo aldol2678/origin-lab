@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <title>기원의 실험실 v0.1.1</title>
+    <style>/* BUILD_STYLE */</style>
+  </head>
+  <body data-tab="world">
+    <a class="skip" href="#main">본문으로 건너뛰기</a>
+    <header class="hud" aria-label="자원 현황">
+      <div class="hud-title">
+        <strong>기원의 실험실</strong>
+        <span class="hud-run" id="hud-run">1회차</span>
+      </div>
+      <dl class="hud-stats">
+        <div title="진화 에너지"><dt>에너지</dt><dd id="hud-energy">0</dd></div>
+        <div title="초당 생태계 생산"><dt>생산</dt><dd id="hud-rate">+0.0</dd></div>
+        <div><dt>통찰</dt><dd id="hud-insight">0</dd></div>
+        <div><dt>발견</dt><dd id="hud-disc">4/30</dd></div>
+      </dl>
+      <button id="probe" class="btn probe" type="button" aria-describedby="probe-gain">
+        <span class="probe-label">탐침</span>
+        <span class="probe-gain" id="probe-gain">+1 에너지</span>
+      </button>
+    </header>
+
+    <aside id="storage-status" aria-label="저장 상태"></aside>
+    <main id="main" class="layout">
+      <section id="panel-world" class="panel" role="tabpanel" aria-labelledby="tab-world" tabindex="-1">
+        <h2 class="panel-title">세계</h2>
+        <div class="world-view">
+          <canvas id="world-canvas" aria-label="생태계 관찰 화면. 아래 목록에서 같은 정보를 볼 수 있습니다."></canvas>
+        </div>
+        <div class="card env" id="env-card"></div>
+        <div class="card" id="species-card"></div>
+        <div class="card detail" id="detail-card" aria-live="polite"></div>
+      </section>
+
+      <section id="panel-lab" class="panel" role="tabpanel" aria-labelledby="tab-lab" tabindex="-1">
+        <h2 class="panel-title">실험실</h2>
+        <div class="card mix">
+          <div class="slots">
+            <button type="button" class="slot" id="slot-a" aria-label="첫 번째 재료 칸">재료 1</button>
+            <span class="slot-plus" aria-hidden="true">+</span>
+            <button type="button" class="slot" id="slot-b" aria-label="두 번째 재료 칸">재료 2</button>
+          </div>
+          <button type="button" class="btn primary wide" id="combine">조합하기</button>
+          <p class="mix-result" id="mix-result" role="status" aria-live="polite">재료 두 개를 고르세요. 조합은 무료이며 재료가 사라지지 않습니다.</p>
+          <p class="hint" id="mix-hint"></p>
+        </div>
+        <div class="card disc-card" id="disc-card" hidden></div>
+        <div class="card" id="inventory"></div>
+      </section>
+
+      <div class="side">
+        <section id="panel-evo" class="panel" role="tabpanel" aria-labelledby="tab-evo" tabindex="-1">
+          <h2 class="panel-title">진화</h2>
+          <div class="card" id="chapter-card"></div>
+          <div class="card" id="exp-card"></div>
+          <div id="evo-body"></div>
+        </section>
+        <section id="panel-log" class="panel" role="tabpanel" aria-labelledby="tab-log" tabindex="-1">
+          <h2 class="panel-title">기록</h2>
+          <div id="log-body"></div>
+        </section>
+      </div>
+    </main>
+
+    <nav class="tabbar" role="tablist" aria-label="화면 전환">
+      <button type="button" role="tab" id="tab-world" aria-controls="panel-world" data-tab="world"></button>
+      <button type="button" role="tab" id="tab-lab" aria-controls="panel-lab" data-tab="lab"></button>
+      <button type="button" role="tab" id="tab-evo" aria-controls="panel-evo" data-tab="evo"></button>
+      <button type="button" role="tab" id="tab-log" aria-controls="panel-log" data-tab="log"></button>
+    </nav>
+
+    <dialog id="confirm" aria-labelledby="confirm-title">
+      <form method="dialog" class="confirm">
+        <h3 id="confirm-title"></h3>
+        <div id="confirm-body"></div>
+        <div class="confirm-actions">
+          <button type="submit" value="cancel" class="btn" id="confirm-cancel">취소</button>
+          <button type="submit" value="ok" class="btn primary" id="confirm-ok">확인</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script>/* BUILD_SCRIPT */</script>
+</body></html>

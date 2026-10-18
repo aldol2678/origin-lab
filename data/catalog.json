@@ -1,0 +1,839 @@
+{
+  "items": [
+    {
+      "id": "water",
+      "name": "물",
+      "kind": "base",
+      "plainSummary": "여러 물질을 녹여 서로 만나게 해 주는 액체예요.",
+      "inGameEffect": "시작 재료예요. 다음 조합에 사용할 수 있어요.",
+      "scienceDetail": "물(H₂O)은 많은 물질을 녹이는 용매라서 물질끼리 만나 반응하기 좋은 환경을 만듭니다. 지금까지 알려진 모든 생물은 물이 있어야 살아갑니다."
+    },
+    {
+      "id": "mineral",
+      "name": "광물",
+      "kind": "base",
+      "plainSummary": "암석을 이루는 단단한 고체 성분이에요.",
+      "inGameEffect": "시작 재료예요. 다음 조합에 사용할 수 있어요.",
+      "scienceDetail": "광물은 일정한 화학 조성과 결정 구조를 가진 자연의 고체입니다. 철·황·인처럼 생물에게 필요한 원소의 공급원이 되기도 합니다."
+    },
+    {
+      "id": "atmosphere",
+      "name": "대기",
+      "kind": "base",
+      "plainSummary": "행성을 둘러싼 기체층이에요.",
+      "inGameEffect": "시작 재료예요. 다음 조합에 사용할 수 있어요.",
+      "scienceDetail": "지구 초기 대기에는 산소가 거의 없었던 것으로 여겨집니다. 대기 중 산소가 크게 늘어난 것은 광합성 생물이 오랫동안 산소를 내놓은 뒤의 일로, 약 24억 년 전의 대산화 사건(Great Oxidation Event)이 대표적입니다."
+    },
+    {
+      "id": "energy",
+      "name": "에너지",
+      "kind": "base",
+      "plainSummary": "햇빛·열·번개처럼 변화를 일으키는 힘이에요.",
+      "inGameEffect": "시작 재료예요. 다음 조합에 사용할 수 있어요.",
+      "scienceDetail": "에너지는 일을 할 수 있는 능력입니다. 생물은 햇빛(빛에너지)이나 화학 반응(화학에너지)에서 에너지를 얻어 몸을 만들고 움직입니다.",
+      "scienceCaveat": "게임의 ‘에너지’ 재료는 여러 에너지원을 하나로 묶은 상징입니다. 화면 위쪽의 ‘진화 에너지’ 자원과는 다른 것입니다."
+    },
+    {
+      "id": "vapor",
+      "name": "수증기",
+      "kind": "recipe",
+      "plainSummary": "물이 데워져 기체가 된 거예요.",
+      "inGameEffect": "다음 조합에 사용할 수 있어요.",
+      "scienceDetail": "물은 열을 받으면 증발해 눈에 보이지 않는 기체인 수증기가 됩니다. 주전자에서 하얗게 보이는 김은 수증기가 다시 식어 생긴 작은 물방울입니다."
+    },
+    {
+      "id": "cloud",
+      "name": "구름",
+      "kind": "recipe",
+      "plainSummary": "공기 중에 떠 있는 아주 작은 물방울이나 얼음 알갱이들의 모임이에요.",
+      "inGameEffect": "다음 조합에 사용할 수 있어요.",
+      "scienceDetail": "수증기가 높은 곳에서 식으면 먼지 같은 작은 입자(응결핵)를 중심으로 응결해 작은 물방울이나 얼음 알갱이가 됩니다. 이것들이 많이 모여 눈에 보이는 것이 구름입니다. 즉 구름은 기체인 수증기가 아니라 응결된 물입니다."
+    },
+    {
+      "id": "rain",
+      "name": "비",
+      "kind": "recipe",
+      "plainSummary": "구름 속 물방울이 커지고 무거워져 떨어지는 거예요.",
+      "inGameEffect": "다음 조합에 사용할 수 있어요.",
+      "scienceDetail": "구름 속 물방울이나 얼음 알갱이가 서로 합쳐져 무거워지면 떨어집니다. 비는 육지의 암석을 조금씩 녹이고 깎아(풍화·침식) 광물 성분을 바다로 옮기는 역할도 합니다."
+    },
+    {
+      "id": "sediment",
+      "name": "퇴적물",
+      "kind": "recipe",
+      "plainSummary": "물에 실려 와 바닥에 가라앉아 쌓인 알갱이예요.",
+      "inGameEffect": "다음 조합에 사용할 수 있어요.",
+      "scienceDetail": "모래·진흙처럼 물이나 바람에 실려 온 입자가 쌓인 것입니다. 오랜 시간 눌리고 굳으면 퇴적암이 됩니다. 바다 밑과 연안 생물이 사는 바탕이 되기도 합니다."
+    },
+    {
+      "id": "heat",
+      "name": "지열",
+      "kind": "recipe",
+      "plainSummary": "땅속 깊은 곳에서 나오는 열이에요.",
+      "inGameEffect": "다음 조합에 사용할 수 있어요.",
+      "scienceDetail": "지구 내부의 열은 지구가 만들어질 때 남은 열과 방사성 원소가 붕괴하며 내는 열에서 옵니다. 이 열이 화산 활동과 뜨거운 물이 솟는 열수 활동을 일으킵니다."
+    },
+    {
+      "id": "hydrothermal",
+      "name": "열수 환경",
+      "kind": "recipe",
+      "plainSummary": "땅속 열로 데워진 물이 바다 밑에서 솟아나는 곳이에요.",
+      "inGameEffect": "다음 조합에 사용할 수 있어요. 세계 화면 왼쪽 아래의 주황색 분출구가 원시 바다의 영양분 공급을 나타내요.",
+      "scienceDetail": "바다 밑 열수 분출구(hydrothermal vent)에서는 뜨겁고 광물이 많이 녹은 물이 솟아납니다. 햇빛이 닿지 않는 곳이지만 화학 에너지를 이용하는 미생물을 바탕으로 생물 군집이 살아갑니다.",
+      "scienceCaveat": "열수 분출구는 생명이 시작된 장소의 후보 가운데 하나로 연구되지만, 실제로 그곳에서 생명이 시작됐는지는 확인되지 않았습니다."
+    },
+    {
+      "id": "nutrients",
+      "name": "용존 영양분",
+      "kind": "recipe",
+      "plainSummary": "물에 녹아 있어서 생물이 이용할 수 있는 영양 재료예요.",
+      "inGameEffect": "발견하면 두 서식지의 영양분 자연 회복이 20% 빨라져요. 바다 생물이 자라는 데 쓰는 자원이에요.",
+      "scienceDetail": "질소·인·철 같은 원소가 물에 녹은 형태(질산염, 인산염 등)로 있을 때 생물이 흡수할 수 있습니다. 바다에서는 이런 영양분이 모자라면 생물이 잘 자라지 못합니다."
+    },
+    {
+      "id": "organic_precursor",
+      "name": "유기물 전구체",
+      "kind": "recipe",
+      "plainSummary": "더 복잡한 유기물의 재료가 될 수 있는 물질이에요.",
+      "inGameEffect": "세포와 관련된 조합의 재료예요. 다음 조합에 사용할 수 있어요.",
+      "scienceDetail": "아미노산이나 핵산 재료처럼 탄소를 포함한 비교적 작은 분자를 가리킵니다. 1953년 밀러-유리 실험(Miller–Urey experiment)은 초기 지구 대기를 흉내 낸 기체에 전기 방전을 일으켜 아미노산이 만들어질 수 있음을 보였습니다.",
+      "scienceCaveat": "초기 지구에서 이런 분자가 어디서, 어떤 조건으로 생겼는지는 여러 가설이 경쟁 중입니다. ‘열수 환경 + 대기’ 조합은 게임을 위한 단순화입니다."
+    },
+    {
+      "id": "membrane",
+      "name": "원시 막",
+      "kind": "recipe",
+      "plainSummary": "안과 밖을 나눌 수 있는 아주 얇은 막이에요.",
+      "inGameEffect": "원시 세포 조합의 재료예요. 다음 조합에 사용할 수 있어요.",
+      "scienceDetail": "지방산 같은 분자는 물속에서 저절로 모여, 안쪽에 물을 품은 작은 주머니(소포, vesicle)를 만들 수 있습니다. 실험실에서는 이런 주머니가 커지거나 나뉘는 모습도 관찰됩니다.",
+      "scienceCaveat": "최초 세포의 막이 실제로 어떤 분자였는지는 아직 가설과 실험 모형 단계입니다."
+    },
+    {
+      "id": "replicator",
+      "name": "복제 분자",
+      "kind": "recipe",
+      "plainSummary": "자기와 닮은 분자를 다시 만드는 데 관여하는 분자예요.",
+      "inGameEffect": "원시 세포 조합의 재료예요. 다음 조합에 사용할 수 있어요.",
+      "scienceDetail": "오늘날 생물은 DNA에 유전 정보를 담고, 단백질 효소의 도움을 받아 복제합니다. RNA는 정보를 담으면서 일부 화학 반응을 돕기도 해서, 초기 생명에서는 RNA가 두 역할을 했다는 ‘RNA 세계 가설(RNA world hypothesis)’이 있습니다.",
+      "scienceCaveat": "RNA 세계는 가설입니다. 게임의 ‘복제 분자’는 특정 분자를 가리키지 않는 상징입니다."
+    },
+    {
+      "id": "protocell",
+      "name": "원시 세포",
+      "kind": "recipe",
+      "plainSummary": "막 안에 복제 분자를 담은, 세포의 아주 단순한 모형이에요.",
+      "inGameEffect": "여러 생물 조합의 핵심 재료예요. 도감에 발견해도 세계에 바로 배치되지는 않아요.",
+      "scienceDetail": "원시 세포(protocell)는 막으로 둘러싸인 공간 안에서 분자의 복제와 화학 반응이 함께 일어나는 단순한 구조를 말합니다. 연구자들은 실험실에서 이런 구조를 만들어 ‘생명이 되려면 최소한 무엇이 필요한가’를 탐구합니다.",
+      "scienceCaveat": "최초의 세포가 실제로 어떤 모습이었는지는 알려져 있지 않습니다. 이 항목은 실험·가설 모형을 바탕으로 한 게임 속 단계입니다."
+    },
+    {
+      "id": "metabolic_cycle",
+      "name": "기초 대사",
+      "kind": "recipe",
+      "plainSummary": "생물이 물질을 바꾸며 에너지를 얻고 사용하는 과정이에요.",
+      "inGameEffect": "초기 생물과 관련된 조합의 재료예요. 다음 조합에 사용할 수 있어요.",
+      "scienceDetail": "대사(metabolism)는 몸속에서 일어나는 화학 반응 전체를 가리킵니다. 영양분을 분해해 에너지를 얻는 반응과, 그 에너지로 몸을 이루는 물질을 만드는 반응이 서로 이어져 있습니다.",
+      "scienceCaveat": "게임의 ‘기초 대사’는 수많은 반응을 한 칸으로 묶은 상징입니다."
+    },
+    {
+      "id": "chemosynth_microbe",
+      "name": "화학합성 미생물",
+      "kind": "recipe",
+      "plainSummary": "햇빛 대신 화학 반응에서 에너지를 얻는 작은 생물이에요.",
+      "inGameEffect": "세계에 처음 배치할 수 있는 생산자예요. 원시 바다에서만 살고, 영양분을 먹으며 진화 에너지를 조금씩 만들어요.",
+      "scienceDetail": "화학합성(chemosynthesis) 생물은 황화수소나 수소 같은 물질이 반응할 때 나오는 에너지로 이산화탄소에서 유기물을 만듭니다. 깊은 바다의 열수 분출구 주변에서는 이런 미생물이 먹이사슬의 바탕이 됩니다.",
+      "scienceCaveat": "이런 생물이 오늘날 열수 환경에 산다는 사실이, 생명이 그곳에서 시작됐다는 증거가 되지는 않습니다.",
+      "species": {
+        "diet": "물에 녹은 영양분 (게임의 ‘영양분’ 수치)",
+        "energySource": "화학 반응에서 얻는 에너지 — 빛이 필요 없어요",
+        "impact": "죽으면 사체가 유기물로 쌓여요. 산소는 만들지 않아요."
+      }
+    },
+    {
+      "id": "pigment",
+      "name": "광반응 색소",
+      "kind": "recipe",
+      "plainSummary": "빛을 흡수하는 색을 띤 분자예요.",
+      "inGameEffect": "광합성 조합의 재료예요. 다음 조합에 사용할 수 있어요.",
+      "scienceDetail": "엽록소(chlorophyll) 같은 색소는 특정한 색(파장)의 빛을 흡수해 그 에너지를 화학 반응으로 넘깁니다. 식물이 초록색으로 보이는 것은 엽록소가 초록빛을 덜 흡수하고 많이 반사하기 때문입니다."
+    },
+    {
+      "id": "photosynthesis",
+      "name": "광합성",
+      "kind": "recipe",
+      "plainSummary": "빛을 이용해 이산화탄소로 유기물을 만드는 과정이에요.",
+      "inGameEffect": "광합성 생물 조합의 재료예요. 다음 조합에 사용할 수 있어요. 이 게임의 광합성 계통(광합성 미생물·연안 군체)은 산소를 내놓아요.",
+      "scienceDetail": "광합성(photosynthesis)은 빛에너지로 이산화탄소를 유기물로 바꾸는 과정입니다. 식물·조류·남세균은 물을 분해하면서 산소를 내놓지만, 일부 세균은 물 대신 황화수소 같은 물질을 써서 산소가 나오지 않는 광합성을 합니다.",
+      "scienceCaveat": "게임에서는 ‘광합성 = 산소 생산’으로 단순화했습니다. 모든 광합성이 산소를 내놓지는 않습니다."
+    },
+    {
+      "id": "photo_microbe",
+      "name": "광합성 미생물",
+      "kind": "recipe",
+      "plainSummary": "빛으로 양분을 만들고 산소를 내놓는 작은 생물이에요.",
+      "inGameEffect": "배치하면 산소가 늘어나요. 초식 원생생물의 먹이가 되고, 산소 축적 관찰의 조건이에요.",
+      "scienceDetail": "남세균(cyanobacteria)은 물을 분해하며 산소를 내놓는 광합성을 하는 세균입니다. 이런 미생물은 아주 오랜 시간에 걸쳐 바다와 대기에 산소를 쌓은 주역으로 여겨집니다. 오늘날에도 바다에서 만들어지는 산소의 상당 부분을 작은 광합성 미생물이 담당합니다.",
+      "scienceCaveat": "실제 광합성 미생물은 매우 다양합니다. 게임의 한 종은 공통된 특징만 뽑은 대표 모형입니다.",
+      "species": {
+        "diet": "물에 녹은 영양분 + 빛",
+        "energySource": "빛 (광합성)",
+        "impact": "산소를 늘리고, 초식 원생생물의 먹이가 돼요. 먹히거나 죽으면 유기물이 쌓여요."
+      }
+    },
+    {
+      "id": "aerobic_metabolism",
+      "name": "산소 대사",
+      "kind": "recipe",
+      "plainSummary": "산소를 써서 영양분에서 에너지를 더 많이 꺼내는 대사예요.",
+      "inGameEffect": "발견하면 초식·포식 원생생물이 필요한 최소 산소가 4 낮아지고, 번식이 20% 빨라져요.",
+      "scienceDetail": "산소 호흡(aerobic respiration)은 포도당 같은 물질을 산소로 끝까지 분해해, 산소 없이 분해할 때보다 훨씬 많은 에너지(ATP)를 얻습니다. 산소가 많아진 환경은 더 활발하게 움직이는 생물이 살 수 있는 조건이 되었다고 여겨집니다."
+    },
+    {
+      "id": "grazer",
+      "name": "초식 원생생물",
+      "kind": "recipe",
+      "plainSummary": "광합성 미생물을 삼켜 먹는 작은 단세포 생물이에요.",
+      "inGameEffect": "광합성 미생물을 먹고 늘어나요. 산소가 10보다 높아야 번식하고, 20 이상이면 제대로 자라요.",
+      "scienceDetail": "원생생물(protist)은 동물·식물·균류에 속하지 않는 진핵생물을 편의상 묶어 부르는 말입니다. 세균보다 크고 세포 안에 핵이 있으며, 세균이나 조류를 삼켜 먹는 종이 많습니다.",
+      "scienceCaveat": "원생생물은 하나의 혈통이 아니라 여러 계통을 모아 부르는 이름입니다. ‘초식’은 게임 속 역할 이름입니다.",
+      "species": {
+        "diet": "광합성 미생물 (같은 서식지)",
+        "energySource": "먹은 먹이를 산소로 분해 (호흡)",
+        "impact": "광합성 미생물 수를 줄이고, 포식 원생생물의 먹이가 돼요. 산소를 조금씩 써요."
+      }
+    },
+    {
+      "id": "predator",
+      "name": "포식 원생생물",
+      "kind": "recipe",
+      "plainSummary": "초식 원생생물을 잡아먹는 단세포 생물이에요.",
+      "inGameEffect": "초식 원생생물을 먹어요. 산소가 14보다 높아야 번식하고(24 이상이면 제대로), 진화 에너지를 많이 만들어요.",
+      "scienceDetail": "단세포 생물 가운데에도 다른 원생생물을 사냥하는 종이 있습니다. 짚신벌레를 잡아먹는 디디니움(Didinium)이 잘 알려진 예입니다.",
+      "scienceCaveat": "먹이사슬은 게임을 위해 생산자 → 초식 → 포식의 세 칸으로 단순화했습니다.",
+      "species": {
+        "diet": "초식 원생생물 (같은 서식지)",
+        "energySource": "먹은 먹이를 산소로 분해 (호흡)",
+        "impact": "초식 원생생물 수를 억제해 광합성 미생물이 회복할 여지를 만들어요. 산소를 써요."
+      }
+    },
+    {
+      "id": "decomposer",
+      "name": "분해 미생물",
+      "kind": "recipe",
+      "plainSummary": "죽은 생물과 찌꺼기를 분해해 영양분으로 되돌리는 미생물이에요.",
+      "inGameEffect": "유기물을 먹고 영양분으로 바꿔 서식지에 돌려줘요.",
+      "scienceDetail": "분해자(decomposer)는 사체와 배설물 속 유기물을 작은 물질로 분해합니다. 이 과정에서 질소·인 같은 영양분이 다른 생물이 다시 쓸 수 있는 형태로 돌아갑니다(물질 순환).",
+      "species": {
+        "diet": "유기물 (사체·찌꺼기)",
+        "energySource": "유기물을 분해하며 얻는 에너지",
+        "impact": "쌓인 유기물을 줄이고 영양분을 늘려요. 산소를 아주 조금 써요."
+      }
+    },
+    {
+      "id": "coastal_habitat",
+      "name": "연안 환경",
+      "kind": "recipe",
+      "plainSummary": "얕은 바닷물에 빛이 잘 드는 해안 가까운 환경이에요.",
+      "inGameEffect": "연안 서식지가 열려요. 광합성 생물·소비자를 연안에도 배치할 수 있어요.",
+      "scienceDetail": "연안은 수심이 얕아 햇빛이 바닥까지 닿는 곳이 많습니다. 강과 비가 육지에서 영양분을 실어 오기 때문에, 먼바다보다 생물이 많이 자라는 경우가 흔합니다."
+    },
+    {
+      "id": "coastal_colony",
+      "name": "연안 군체",
+      "kind": "recipe",
+      "plainSummary": "연안에 모여 층을 이루며 사는 광합성 미생물 무리예요.",
+      "inGameEffect": "연안에만 배치할 수 있어요. 산소가 15보다 높아야 번식하고(25 이상이면 제대로), 산소와 진화 에너지를 많이 만들어요.",
+      "scienceDetail": "남세균 같은 미생물은 얕은 물에서 끈적한 층(미생물 매트)을 이루며 모여 삽니다. 이런 층이 퇴적물을 붙잡으며 쌓여 굳은 구조물을 스트로마톨라이트(stromatolite)라고 하며, 아주 오래된 생명 흔적 가운데 하나로 연구됩니다.",
+      "scienceCaveat": "게임의 ‘연안 군체’는 이런 미생물 매트를 단순화한 모형입니다.",
+      "species": {
+        "diet": "물에 녹은 영양분 + 빛",
+        "energySource": "빛 (광합성)",
+        "impact": "산소를 늘려요. 다른 생물의 먹이로는 쓰이지 않아요(게임 규칙)."
+      }
+    },
+    {
+      "id": "symbiosis",
+      "name": "공생",
+      "kind": "recipe",
+      "plainSummary": "서로 다른 종이 가까이 붙어 관계를 맺고 함께 사는 거예요.",
+      "inGameEffect": "분해 미생물의 영양분 환원이 25% 늘어나요. 서로 돕는 경우(상리공생)를 단순화한 효과예요.",
+      "scienceDetail": "공생(symbiosis)에는 둘 다 이득을 보는 상리공생, 한쪽만 이득을 보는 편리공생, 한쪽이 피해를 보는 기생이 모두 포함됩니다. 진핵세포의 미토콘드리아와 엽록체가 옛 세균에서 비롯되었다는 내부공생설(endosymbiotic theory)도 공생의 예입니다.",
+      "scienceCaveat": "공생이 항상 서로에게 이득인 것은 아닙니다. 게임의 보너스는 서로 돕는 경우만 모델로 삼았습니다."
+    },
+    {
+      "id": "sensory_response",
+      "name": "초기 감각 반응",
+      "kind": "recipe",
+      "plainSummary": "빛이나 먹이 냄새 같은 주변 변화를 알아차리고 움직임을 바꾸는 반응이에요.",
+      "inGameEffect": "진화 탭의 최종 실험(빛·먹이 반응 실험)이 열려요. 에너지가 필요 없어요.",
+      "scienceDetail": "세균은 화학 물질의 농도 변화를 감지해 헤엄치는 방향을 바꾸고(화학주성, chemotaxis), 일부 미생물은 빛 쪽으로 움직입니다(주광성, phototaxis). 신경계가 없어도 이런 단순한 감지와 반응이 가능합니다.",
+      "scienceCaveat": "게임의 ‘초기 감각 반응’은 연구 목표를 위한 상징적인 해금이며, 감각이 언제 어떻게 처음 생겼는지를 말하지 않습니다."
+    },
+    {
+      "id": "oxygen_accumulation",
+      "name": "산소 축적",
+      "kind": "observation",
+      "plainSummary": "광합성 생물이 내놓은 산소가 바다와 대기에 쌓인 상태예요.",
+      "inGameEffect": "관찰 기록이에요. 원시 세포와 조합하면 산소 대사를 찾을 수 있어요.",
+      "scienceDetail": "지구에서는 산소를 내놓는 광합성이 시작된 뒤에도 산소가 곧바로 쌓이지 않았습니다. 바다에 녹은 철 등과 먼저 반응하며 소모되었고, 아주 오랜 시간에 걸쳐 늘어났습니다.",
+      "scienceCaveat": "게임의 ‘20초 유지’는 실제로 수억 년에 걸친 변화를 크게 압축한 것입니다."
+    },
+    {
+      "id": "trophic_balance",
+      "name": "먹이사슬 균형",
+      "kind": "observation",
+      "plainSummary": "먹고 먹히는 생물들이 한동안 함께 살아남은 상태예요.",
+      "inGameEffect": "고급 조합 재료예요. 포식 원생생물과 조합해 보세요.",
+      "scienceDetail": "포식자와 먹이의 수는 서로 영향을 주며 오르내립니다. 로트카-볼테라 모형(Lotka–Volterra model)은 이런 관계를 수식으로 나타낸 고전적인 예입니다. 실제 생태계는 먹이 경쟁과 환경 변화 때문에 훨씬 복잡합니다.",
+      "scienceCaveat": "게임의 ‘균형’은 60초 동안 모두 살아남았다는 조건일 뿐, 실제 생태계의 안정성을 판단하는 기준은 아닙니다."
+    },
+    {
+      "id": "tidal_habitat",
+      "name": "조간대",
+      "kind": "environment",
+      "plainSummary": "밀물 때 잠기고 썰물 때 드러나는 바닷가예요.",
+      "inGameEffect": "세 번째 서식지가 열려요. 물 교환과 빛을 조절할 수 있어요.",
+      "scienceDetail": "조간대에서는 조석에 따라 침수 시간, 온도와 염분 등이 달라집니다. 이 모형은 물 교환과 빛의 효과만 다룹니다.",
+      "scienceCaveat": "조합은 진화의 실제 순서나 직접 조상 관계를 뜻하지 않는 탐색 모형입니다. 수치와 시간, 종 사이의 관계를 교육용으로 단순화했습니다."
+    },
+    {
+      "id": "cell_adhesion",
+      "name": "세포 부착",
+      "kind": "concept",
+      "plainSummary": "세포가 서로 붙어서 모여 있을 수 있는 성질이에요.",
+      "inGameEffect": "세포의 역할 분화로 이어지는 조합 재료예요.",
+      "scienceDetail": "세포 접착에는 세포 표면 단백질과 세포 밖 물질 등이 관여합니다. 붙어 있는 군체가 모두 복잡한 다세포 생물인 것은 아닙니다.",
+      "scienceCaveat": "조합은 진화의 실제 순서나 직접 조상 관계를 뜻하지 않는 탐색 모형입니다. 수치와 시간, 종 사이의 관계를 교육용으로 단순화했습니다."
+    },
+    {
+      "id": "division_of_labor",
+      "name": "세포의 역할 분화",
+      "kind": "concept",
+      "plainSummary": "한 몸 안의 세포가 서로 다른 일을 맡는 거예요.",
+      "inGameEffect": "다세포 조류와 해면형 여과자를 탐색하는 재료예요.",
+      "scienceDetail": "다세포성은 여러 생물 계통에서 독립적으로 진화했습니다. 세포 간 협력과 분화의 정도도 계통마다 다릅니다.",
+      "scienceCaveat": "조합은 진화의 실제 순서나 직접 조상 관계를 뜻하지 않는 탐색 모형입니다. 수치와 시간, 종 사이의 관계를 교육용으로 단순화했습니다."
+    },
+    {
+      "id": "macroalgae",
+      "name": "다세포 조류",
+      "kind": "species",
+      "plainSummary": "여러 세포가 몸을 이루며 빛으로 양분을 만드는 생물이에요.",
+      "inGameEffect": "조간대의 영양분을 쓰고 산소를 공급해요. 그늘에서는 생산이 줄어요.",
+      "scienceDetail": "많은 다세포 조류는 광합성으로 유기물을 만듭니다. 큰 조류의 몸은 다른 생물의 서식 공간이 될 수 있습니다. 조류는 하나의 단일한 진화 계통을 뜻하지 않습니다.",
+      "scienceCaveat": "조합은 진화의 실제 순서나 직접 조상 관계를 뜻하지 않는 탐색 모형입니다. 수치와 시간, 종 사이의 관계를 교육용으로 단순화했습니다.",
+      "species": {
+        "diet": "빛과 영양분으로 유기물을 만듭니다.",
+        "energySource": "광합성",
+        "impact": "산소 공급, 영양분 소비, 은신처 제공"
+      }
+    },
+    {
+      "id": "filter_flow",
+      "name": "여과 섭식",
+      "kind": "concept",
+      "plainSummary": "물속의 작은 먹이를 걸러 먹는 방법이에요.",
+      "inGameEffect": "해면형 여과자를 발견하는 조합 재료예요.",
+      "scienceDetail": "여과 섭식자는 물의 흐름과 포획 구조를 이용합니다. 여과 대상과 입자 크기는 종에 따라 다릅니다.",
+      "scienceCaveat": "조합은 진화의 실제 순서나 직접 조상 관계를 뜻하지 않는 탐색 모형입니다. 수치와 시간, 종 사이의 관계를 교육용으로 단순화했습니다."
+    },
+    {
+      "id": "sponge",
+      "name": "해면형 여과자",
+      "kind": "species",
+      "plainSummary": "몸속으로 물을 흘려 작은 먹이를 걸러 먹는 동물 모형이에요.",
+      "inGameEffect": "기존 광합성 미생물을 먹어요. 먹이가 줄면 번식도 줄어요.",
+      "scienceDetail": "실제 해면동물은 편모가 있는 세포로 물의 흐름을 만들고 세균 등 작은 입자를 포획합니다. 일부 종은 광합성 공생 미생물을 품습니다.",
+      "scienceCaveat": "조합은 진화의 실제 순서나 직접 조상 관계를 뜻하지 않는 탐색 모형입니다. 수치와 시간, 종 사이의 관계를 교육용으로 단순화했습니다.",
+      "species": {
+        "diet": "광합성 미생물",
+        "energySource": "여과 섭식",
+        "impact": "미생물 수 감소, 사망 후 유기물 공급"
+      }
+    },
+    {
+      "id": "nerve_net",
+      "name": "신경망",
+      "kind": "concept",
+      "plainSummary": "신호를 주고받는 신경세포가 그물처럼 이어진 구조예요.",
+      "inGameEffect": "자포동물형 포식자를 탐색하는 재료예요.",
+      "scienceDetail": "자포동물의 신경계는 감각과 운동을 조절합니다. 분산된 신경망과 더 집중된 구조가 함께 나타나기도 합니다. 이것을 모든 동물 신경계의 직접 조상으로 단정할 수는 없습니다.",
+      "scienceCaveat": "조합은 진화의 실제 순서나 직접 조상 관계를 뜻하지 않는 탐색 모형입니다. 수치와 시간, 종 사이의 관계를 교육용으로 단순화했습니다."
+    },
+    {
+      "id": "cnidarian",
+      "name": "자포동물형 포식자",
+      "kind": "species",
+      "plainSummary": "촉수로 작은 먹이를 잡는 동물 모형이에요.",
+      "inGameEffect": "기존 초식 원생생물을 먹어요. 먹이가 많을 때 성장하고 산소가 부족하면 줄어요.",
+      "scienceDetail": "자포동물은 자포세포로 먹이를 포획하거나 방어합니다. 실제 먹이는 종과 크기에 따라 달라집니다. 여기서는 작은 원생생물을 먹는 하나의 기능형으로 표현했습니다.",
+      "scienceCaveat": "조합은 진화의 실제 순서나 직접 조상 관계를 뜻하지 않는 탐색 모형입니다. 수치와 시간, 종 사이의 관계를 교육용으로 단순화했습니다.",
+      "species": {
+        "diet": "초식 원생생물",
+        "energySource": "포식",
+        "impact": "먹이 개체 수 감소, 산소 소비"
+      }
+    },
+    {
+      "id": "nursery",
+      "name": "조류의 은신처",
+      "kind": "concept",
+      "plainSummary": "조류 사이의 작은 틈이 먹잇감의 숨을 곳이 돼요.",
+      "inGameEffect": "조간대 조류가 5 이상이면 초식 원생생물의 포식 손실이 40% 줄어요.",
+      "scienceDetail": "서식 공간의 복잡성은 포식자의 접근과 먹이의 피난 가능성을 바꿉니다. 조류가 언제나 모든 먹이 생물을 보호하는 것은 아닙니다.",
+      "scienceCaveat": "조합은 진화의 실제 순서나 직접 조상 관계를 뜻하지 않는 탐색 모형입니다. 수치와 시간, 종 사이의 관계를 교육용으로 단순화했습니다."
+    },
+    {
+      "id": "resilient_web",
+      "name": "연결된 얕은 바다",
+      "kind": "concept",
+      "plainSummary": "생산과 섭식, 분해가 함께 이어진 생태계예요.",
+      "inGameEffect": "두 관찰을 조합하면 두 번째 장을 마쳐요. 조건을 바꾸며 계속 실험할 수 있어요.",
+      "scienceDetail": "먹이망은 물질과 에너지의 이동을 연결합니다. 에너지는 흐르며 일부가 열로 빠져나가고, 영양 물질은 여러 경로로 순환합니다. 짧은 공존은 장기 안정성을 보장하지 않습니다.",
+      "scienceCaveat": "조합은 진화의 실제 순서나 직접 조상 관계를 뜻하지 않는 탐색 모형입니다. 수치와 시간, 종 사이의 관계를 교육용으로 단순화했습니다."
+    },
+    {
+      "id": "light_comparison",
+      "name": "빛과 생산의 차이",
+      "kind": "observation",
+      "plainSummary": "빛을 바꾸자 같은 생태계의 생산량이 달라졌어요.",
+      "inGameEffect": "밝음과 그늘에서 각각 측정해 발견해요. 기원 데이터 2를 한 번 받아요.",
+      "scienceDetail": "광합성은 빛뿐 아니라 영양분, 온도 등 여러 요인의 영향을 받습니다. 같은 개체군의 조건을 비교해야 빛의 효과를 더 잘 구분할 수 있습니다.",
+      "scienceCaveat": "조합은 진화의 실제 순서나 직접 조상 관계를 뜻하지 않는 탐색 모형입니다. 수치와 시간, 종 사이의 관계를 교육용으로 단순화했습니다."
+    },
+    {
+      "id": "living_web",
+      "name": "이어지는 먹이망",
+      "kind": "observation",
+      "plainSummary": "오래전 발견한 미생물과 새 동물이 서로 영향을 줬어요.",
+      "inGameEffect": "실제 여과·포식·분해가 일어난 조간대를 기록해요. 기원 데이터 2를 한 번 받아요.",
+      "scienceDetail": "생산자가 만든 유기물은 섭식과 사망을 거쳐 이동합니다. 분해자는 유기물에서 영양분을 되돌려 놓습니다. 이 모형은 각 기능을 소수의 개체군으로 대표합니다.",
+      "scienceCaveat": "조합은 진화의 실제 순서나 직접 조상 관계를 뜻하지 않는 탐색 모형입니다. 수치와 시간, 종 사이의 관계를 교육용으로 단순화했습니다."
+    }
+  ],
+  "recipes": [
+    {
+      "no": 1,
+      "a": "water",
+      "b": "energy",
+      "out": "vapor"
+    },
+    {
+      "no": 2,
+      "a": "vapor",
+      "b": "atmosphere",
+      "out": "cloud"
+    },
+    {
+      "no": 3,
+      "a": "cloud",
+      "b": "water",
+      "out": "rain"
+    },
+    {
+      "no": 4,
+      "a": "water",
+      "b": "mineral",
+      "out": "sediment"
+    },
+    {
+      "no": 5,
+      "a": "mineral",
+      "b": "energy",
+      "out": "heat"
+    },
+    {
+      "no": 6,
+      "a": "heat",
+      "b": "water",
+      "out": "hydrothermal"
+    },
+    {
+      "no": 7,
+      "a": "sediment",
+      "b": "rain",
+      "out": "nutrients"
+    },
+    {
+      "no": 8,
+      "a": "hydrothermal",
+      "b": "atmosphere",
+      "out": "organic_precursor"
+    },
+    {
+      "no": 9,
+      "a": "organic_precursor",
+      "b": "water",
+      "out": "membrane"
+    },
+    {
+      "no": 10,
+      "a": "organic_precursor",
+      "b": "energy",
+      "out": "replicator"
+    },
+    {
+      "no": 11,
+      "a": "membrane",
+      "b": "replicator",
+      "out": "protocell"
+    },
+    {
+      "no": 12,
+      "a": "protocell",
+      "b": "hydrothermal",
+      "out": "metabolic_cycle"
+    },
+    {
+      "no": 13,
+      "a": "protocell",
+      "b": "metabolic_cycle",
+      "out": "chemosynth_microbe"
+    },
+    {
+      "no": 14,
+      "a": "organic_precursor",
+      "b": "atmosphere",
+      "out": "pigment"
+    },
+    {
+      "no": 15,
+      "a": "pigment",
+      "b": "energy",
+      "out": "photosynthesis"
+    },
+    {
+      "no": 16,
+      "a": "protocell",
+      "b": "photosynthesis",
+      "out": "photo_microbe"
+    },
+    {
+      "no": 17,
+      "a": "protocell",
+      "b": "oxygen_accumulation",
+      "out": "aerobic_metabolism"
+    },
+    {
+      "no": 18,
+      "a": "photo_microbe",
+      "b": "protocell",
+      "out": "grazer"
+    },
+    {
+      "no": 19,
+      "a": "grazer",
+      "b": "metabolic_cycle",
+      "out": "predator"
+    },
+    {
+      "no": 20,
+      "a": "chemosynth_microbe",
+      "b": "sediment",
+      "out": "decomposer"
+    },
+    {
+      "no": 21,
+      "a": "sediment",
+      "b": "photosynthesis",
+      "out": "coastal_habitat"
+    },
+    {
+      "no": 22,
+      "a": "photo_microbe",
+      "b": "coastal_habitat",
+      "out": "coastal_colony"
+    },
+    {
+      "no": 23,
+      "a": "decomposer",
+      "b": "photo_microbe",
+      "out": "symbiosis"
+    },
+    {
+      "no": 24,
+      "a": "predator",
+      "b": "trophic_balance",
+      "out": "sensory_response"
+    },
+    {
+      "no": 25,
+      "a": "coastal_habitat",
+      "b": "water",
+      "out": "tidal_habitat"
+    },
+    {
+      "no": 26,
+      "a": "membrane",
+      "b": "coastal_colony",
+      "out": "cell_adhesion"
+    },
+    {
+      "no": 27,
+      "a": "cell_adhesion",
+      "b": "metabolic_cycle",
+      "out": "division_of_labor"
+    },
+    {
+      "no": 28,
+      "a": "division_of_labor",
+      "b": "photosynthesis",
+      "out": "macroalgae"
+    },
+    {
+      "no": 29,
+      "a": "tidal_habitat",
+      "b": "membrane",
+      "out": "filter_flow"
+    },
+    {
+      "no": 30,
+      "a": "division_of_labor",
+      "b": "filter_flow",
+      "out": "sponge"
+    },
+    {
+      "no": 31,
+      "a": "sensory_response",
+      "b": "division_of_labor",
+      "out": "nerve_net"
+    },
+    {
+      "no": 32,
+      "a": "nerve_net",
+      "b": "grazer",
+      "out": "cnidarian"
+    },
+    {
+      "no": 33,
+      "a": "macroalgae",
+      "b": "symbiosis",
+      "out": "nursery"
+    },
+    {
+      "no": 34,
+      "a": "light_comparison",
+      "b": "living_web",
+      "out": "resilient_web"
+    }
+  ],
+  "species": {
+    "chemosynth_microbe": {
+      "id": "chemosynth_microbe",
+      "name": "화학합성 미생물",
+      "trophic": "producer",
+      "photosynthetic": false,
+      "habitats": [
+        "ocean"
+      ],
+      "cost": 15,
+      "seedPop": 6,
+      "r": 0.12,
+      "d": 0.02,
+      "starve": 0.03,
+      "K": {
+        "ocean": 80
+      },
+      "demand": 0.01,
+      "o2Min": -100,
+      "o2": 0,
+      "yield": 0.01,
+      "color": "#d98c3f"
+    },
+    "photo_microbe": {
+      "id": "photo_microbe",
+      "name": "광합성 미생물",
+      "trophic": "producer",
+      "photosynthetic": true,
+      "habitats": [
+        "ocean",
+        "coast",
+        "tide"
+      ],
+      "cost": 60,
+      "seedPop": 6,
+      "r": 0.15,
+      "d": 0.02,
+      "starve": 0.03,
+      "K": {
+        "ocean": 100,
+        "coast": 70,
+        "tide": 90
+      },
+      "demand": 0.008,
+      "o2Min": -100,
+      "o2": 0.012,
+      "yield": 0.012,
+      "color": "#5fae5a"
+    },
+    "grazer": {
+      "id": "grazer",
+      "name": "초식 원생생물",
+      "trophic": "grazer",
+      "photosynthetic": false,
+      "habitats": [
+        "ocean",
+        "coast",
+        "tide"
+      ],
+      "cost": 250,
+      "seedPop": 5,
+      "r": 0.14,
+      "d": 0.025,
+      "starve": 0.06,
+      "K": {
+        "ocean": 60,
+        "coast": 40,
+        "tide": 50
+      },
+      "demand": 0.05,
+      "o2Min": 10,
+      "o2": -0.004,
+      "yield": 0.035,
+      "color": "#4f86c6"
+    },
+    "predator": {
+      "id": "predator",
+      "name": "포식 원생생물",
+      "trophic": "predator",
+      "photosynthetic": false,
+      "habitats": [
+        "ocean",
+        "coast"
+      ],
+      "cost": 600,
+      "seedPop": 4,
+      "r": 0.12,
+      "d": 0.03,
+      "starve": 0.06,
+      "K": {
+        "ocean": 30,
+        "coast": 20
+      },
+      "demand": 0.06,
+      "o2Min": 14,
+      "o2": -0.006,
+      "yield": 0.08,
+      "color": "#c2564b"
+    },
+    "decomposer": {
+      "id": "decomposer",
+      "name": "분해 미생물",
+      "trophic": "decomposer",
+      "photosynthetic": false,
+      "habitats": [
+        "ocean",
+        "coast",
+        "tide"
+      ],
+      "cost": 120,
+      "seedPop": 5,
+      "r": 0.12,
+      "d": 0.02,
+      "starve": 0.04,
+      "K": {
+        "ocean": 50,
+        "coast": 40,
+        "tide": 50
+      },
+      "demand": 0.06,
+      "o2Min": -100,
+      "o2": -0.002,
+      "yield": 0.02,
+      "color": "#8b6f4e"
+    },
+    "coastal_colony": {
+      "id": "coastal_colony",
+      "name": "연안 군체",
+      "trophic": "producer",
+      "photosynthetic": true,
+      "habitats": [
+        "coast"
+      ],
+      "cost": 450,
+      "seedPop": 5,
+      "r": 0.1,
+      "d": 0.015,
+      "starve": 0.03,
+      "K": {
+        "coast": 60
+      },
+      "demand": 0.01,
+      "o2Min": 15,
+      "o2": 0.01,
+      "yield": 0.06,
+      "color": "#2f9e94"
+    },
+    "macroalgae": {
+      "id": "macroalgae",
+      "name": "다세포 조류",
+      "habitats": [
+        "tide"
+      ],
+      "cost": 40,
+      "seedPop": 6,
+      "K": {
+        "tide": 65
+      },
+      "trophic": "producer",
+      "photosynthetic": true,
+      "r": 0.12,
+      "d": 0.018,
+      "starve": 0.04,
+      "demand": 0.012,
+      "o2Min": -100,
+      "o2": 0.025,
+      "yield": 0.05,
+      "color": "#4f9d7a"
+    },
+    "sponge": {
+      "id": "sponge",
+      "name": "해면형 여과자",
+      "habitats": [
+        "tide"
+      ],
+      "cost": 40,
+      "seedPop": 6,
+      "K": {
+        "tide": 65
+      },
+      "trophic": "grazer",
+      "photosynthetic": false,
+      "r": 0.1,
+      "d": 0.018,
+      "starve": 0.05,
+      "demand": 0.045,
+      "o2Min": 8,
+      "o2": -0.004,
+      "yield": 0.06,
+      "color": "#d5ad62"
+    },
+    "cnidarian": {
+      "id": "cnidarian",
+      "name": "자포동물형 포식자",
+      "habitats": [
+        "tide"
+      ],
+      "cost": 40,
+      "seedPop": 6,
+      "K": {
+        "tide": 65
+      },
+      "trophic": "predator",
+      "photosynthetic": false,
+      "r": 0.09,
+      "d": 0.02,
+      "starve": 0.055,
+      "demand": 0.05,
+      "o2Min": 12,
+      "o2": -0.005,
+      "yield": 0.08,
+      "color": "#c77d86"
+    }
+  },
+  "habitats": [
+    "ocean",
+    "coast",
+    "tide"
+  ]
+}
