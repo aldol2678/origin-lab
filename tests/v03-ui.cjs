@@ -394,7 +394,7 @@ async function check(name, fn) {
     },
   );
   await check(
-    "U06 free automation toggle through UI, zero artwork and runtime errors",
+    "U06 free automation toggle through UI, optional artwork and no runtime errors",
     async () => {
       await tab("evo");
       const enabled = await page.evaluate(
@@ -406,13 +406,17 @@ async function check(name, fn) {
         !enabled,
       );
       await page.locator('[data-research="automation"]').click();
-      assert.equal(
-        await page.evaluate(() =>
-          window.OriginLabAssets.getAsset("species.macroalgae"),
-        ),
-        null,
+      const active = JSON.parse(fs.readFileSync("assets/manifest.json")).assets;
+      const asset = await page.evaluate(() =>
+        window.OriginLabAssets.getAsset("species.macroalgae"),
       );
-      assert.equal(await page.locator("img.optional-asset").count(), 0);
+      if (active["species.macroalgae"]) {
+        assert(asset?.src);
+        assert((await page.locator("img.optional-asset").count()) > 0);
+      } else {
+        assert.equal(asset, null);
+        assert.equal(await page.locator("img.optional-asset").count(), 0);
+      }
       assert.deepEqual(errors, []);
       assert(network.every((u) => u.startsWith(base)));
       return { externalNetworkRequests: 0, errors };
@@ -462,8 +466,8 @@ async function check(name, fn) {
       const html = fs
         .readFileSync("origin-lab-v0.3.html", "utf8")
         .replace(
-          /const ASSET_MANIFEST\s*=\s*\{"version":1,"assets":\{\}\}/,
-          "const ASSET_MANIFEST=" + JSON.stringify(partial),
+          /const ASSET_MANIFEST\s*=\s*[^\n]+;/,
+          "const ASSET_MANIFEST=" + JSON.stringify(partial) + ";",
         );
       assert(html.includes(empty));
       await ctx.route("https://origin.test/", (route) =>
