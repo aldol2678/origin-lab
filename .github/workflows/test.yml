@@ -18,5 +18,8 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: mkdir -p qa/screenshots
       - run: npm run build
+      - run: git diff --exit-code -- origin-lab-v0.3.html
+      - run: npm run audit:public
       - run: npm test
+      - run: npm run test:evidence
       - run: npm run test:browser

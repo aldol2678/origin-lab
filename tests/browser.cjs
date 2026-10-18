@@ -36,7 +36,7 @@ const server = http.createServer((req, res) => {
   });
   const page = await context.newPage();
   page.on("pageerror", (e) => errors.push(e.message));
-  const url = base + "/origin-lab-v0.2.html?debug=1";
+  const url = base + "/origin-lab-v0.3.html?debug=1";
   async function check(name, fn) {
     const info = await fn();
     results.push({ name, status: "PASS", ...info });
@@ -52,6 +52,8 @@ const server = http.createServer((req, res) => {
     await page.evaluate(
       ({ state, v }) => {
         __originLab.stop();
+        // Fixture reset must not trigger an outgoing pagehide conflict backup.
+        __originLab.app.save = () => true;
         localStorage.clear();
         localStorage.setItem(
           "originLab.save.v2",
@@ -92,7 +94,7 @@ const server = http.createServer((req, res) => {
       await seed(finished);
       await page.goto(base + "/baseline/origin-lab-v0.1.1.html?debug=1");
       const before = await page.evaluate(() =>
-        localStorage.getItem("originLab.save.v3"),
+        localStorage.getItem("originLab.save.v4"),
       );
       await page.evaluate(() => {
         __originLab.stop();
@@ -101,7 +103,7 @@ const server = http.createServer((req, res) => {
         __originLab.app.save();
       });
       assert.equal(
-        await page.evaluate(() => localStorage.getItem("originLab.save.v3")),
+        await page.evaluate(() => localStorage.getItem("originLab.save.v4")),
         before,
       );
       await page.goto(url);
@@ -226,7 +228,7 @@ const server = http.createServer((req, res) => {
       const d = await download;
       await d.saveAs("qa/export-evidence.json");
       const exported = JSON.parse(fs.readFileSync("qa/export-evidence.json"));
-      assert.equal(exported.schemaVersion, 3);
+      assert.equal(exported.schemaVersion, 4);
       assert.equal(exported.state.chapter.completed, true);
       const imported = structuredClone(exported);
       imported.state.energy = 12345;
@@ -289,7 +291,7 @@ const server = http.createServer((req, res) => {
       assert.equal(
         await page.evaluate(
           () =>
-            JSON.parse(localStorage.getItem("originLab.save.v3")).state.energy,
+            JSON.parse(localStorage.getItem("originLab.save.v4")).state.energy,
         ),
         4321,
       );
@@ -309,7 +311,7 @@ const server = http.createServer((req, res) => {
       try {
         await file.goto(
           "file://" +
-            path.join(process.cwd(), "origin-lab-v0.2.html") +
+            path.join(process.cwd(), "origin-lab-v0.3.html") +
             "?debug=1",
         );
       } catch (e) {
@@ -386,7 +388,7 @@ const server = http.createServer((req, res) => {
       await ctx.route("https://origin.test/", (r) =>
         r.fulfill({
           contentType: "text/html",
-          body: fs.readFileSync("origin-lab-v0.2.html", "utf8"),
+          body: fs.readFileSync("origin-lab-v0.3.html", "utf8"),
         }),
       );
       const offline = await ctx.newPage();

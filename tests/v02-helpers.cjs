@@ -1,0 +1,48 @@
+const fs = require("node:fs"),
+  vm = require("node:vm");
+function core(baseline = false) {
+  let js;
+  const bundled = fs
+    .readFileSync("origin-lab-v0.2.html", "utf8")
+    .split("<script>")[1]
+    .split("</script>")[0];
+  const gameStart = bundled.indexOf('"use strict";');
+  if (baseline) js = fs.readFileSync("baseline/readable-bundle.js", "utf8");
+  else js = bundled.slice(gameStart);
+  js =
+    js.slice(0, js.indexOf("  var Wt =")) +
+    `globalThis.core={le,Pt,Je,Re,Ye,Xe,yt,Ze,Ht,Kt,Bt,Ut,nt,Ft,jt,Rt,It,ze,Ut,_t,U,Se,Y,I,C,g,S,$,Et${baseline ? "" : ",enterChapter,observeChapter,chapterAction,storageManager"}};})();`;
+  const ctx = {
+    console,
+    structuredClone,
+    URLSearchParams,
+    crypto: require("node:crypto").webcrypto,
+  };
+  vm.createContext(ctx);
+  if (!baseline) vm.runInContext(bundled.slice(0, gameStart), ctx);
+  vm.runInContext(js, ctx);
+  return ctx.core;
+}
+class MemoryStorage {
+  constructor() {
+    this.data = new Map();
+    this.fail = false;
+  }
+  get length() {
+    return this.data.size;
+  }
+  key(i) {
+    return [...this.data.keys()][i] ?? null;
+  }
+  getItem(k) {
+    return this.data.get(k) ?? null;
+  }
+  setItem(k, v) {
+    if (this.fail) throw Error("QuotaExceededError");
+    this.data.set(k, String(v));
+  }
+  removeItem(k) {
+    this.data.delete(k);
+  }
+}
+module.exports = { core, MemoryStorage };

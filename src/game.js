@@ -608,7 +608,7 @@
       ? t + (ut(t) && !Yt(t) ? n : i)
       : t + (ut(t) ? n : i);
   }
-  var xe = 3;
+  var xe = 4;
   function ne() {
     return { trials: 0, records: {} };
   }
@@ -640,6 +640,8 @@
       runUpgrades: {},
       finalResearchDone: !1,
       chapter: chapterDefaults(),
+      automation: { unlocked: false, enabled: true },
+      researchNotes: [],
       milestones: [],
       runClicks: 0,
       experiment: ne(),
@@ -838,7 +840,7 @@
       envFit: 1,
     };
   }
-  function Et(t) {
+  function Et(t, controls = {}) {
     let e = { extinct: [], observed: [] },
       n = t.env,
       i = t.pops,
@@ -879,7 +881,7 @@
             g[f].demand *
             (l === "tide" &&
             ce[f] === "grazer" &&
-            b(t, "nursery") &&
+            (controls.nursery ?? b(t, "nursery")) &&
             i.macroalgae.tide >= 5
               ? 0.6
               : 1),
@@ -1346,6 +1348,8 @@
         i.pops[s][a] = k(e.pops?.[s]?.[a], 0, 0, r);
       }
     i.chapter = normalizeChapter(e.chapter, e);
+    i.automation = normalizeAutomation(e.automation, e);
+    i.researchNotes = normalizeResearchNotes(e.researchNotes);
     i.milestones = qe(e.milestones, (x) =>
       ["chapter_one", "tide_compare", "food_web"].includes(x),
     );
@@ -1486,6 +1490,11 @@
       return { status: "rejected", reason: "지원하지 않는 저장 버전입니다." };
     try {
       validateSavedState(e.state);
+      if (
+        e.schemaVersion === 4 &&
+        (!Array.isArray(e.state.researchNotes) || !e.state.automation)
+      )
+        throw Error("v4 연구 노트·자동화 필드 없음");
       if (e.schemaVersion === 1) {
         if (!e.state || typeof e.state != "object")
           throw new Error("state 없음");
@@ -1714,11 +1723,12 @@
       { ok: !0 }
     );
   }
-  function Kt(t) {
+  function Kt(t, controls = {}) {
     t.tick += 1;
     t.totalTicks += 1;
-    const result = Et(t);
+    const result = Et(t, controls);
     chapterTick(t, result);
+    if (!controls.research) automationTick(t);
     return result;
   }
   var hn = 60;
@@ -2492,6 +2502,7 @@
       this.loop.start();
     }
     onTick() {
+      if (this.comparison?.sessionOpen) return;
       if (this.storage && storageManager(this.storage).blocked) return;
       let e = new Set(this.state.discovered),
         n = Kt(this.state);
@@ -2808,7 +2819,8 @@
     renderHUD() {
       let e = this.state;
       ((p("#hud-energy").textContent = be(e.energy)),
-        (p("#hud-rate").textContent = `+${Q(e.energyPerSec)}/초`),
+        (p("#hud-rate").textContent =
+          `+${Q(e.energyPerSec + automationRate(e))}/초`),
         (p("#hud-insight").textContent = be(e.insight)),
         (p("#hud-disc").textContent = `${e.discovered.length}/${Y.length}`),
         (p("#hud-run").textContent =
@@ -3149,6 +3161,9 @@
     }
   };
   /* CHAPTER_MODULE */
+  /* RESEARCH_MODULE */
+  /* RESEARCH_UI_MODULE */
+  /* ASSET_MODULE */
   var Wt = new URLSearchParams(location.search),
     st = Number(Wt.get("seed")),
     xn = Number.isFinite(st) && st > 0 ? Math.floor(st) : 1729,
@@ -3157,6 +3172,13 @@
   Wt.get("debug") === "1" &&
     (window.__originLab = {
       app: ge,
+      research: {
+        snapshot: researchSnapshot,
+        run: runComparison,
+        prepare: prepareResearch,
+        metrics: researchMetrics,
+        presets: RESEARCH_PRESETS,
+      },
       core: {
         le,
         yt,
@@ -3176,6 +3198,8 @@
         I,
         C,
         g,
+        automationTick,
+        automationRate,
         enterChapter,
         observeChapter,
         chapterAction,

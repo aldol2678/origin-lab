@@ -86,10 +86,10 @@ for (const version of [1, 2])
     assert.equal(storage.getItem(key), raw);
     assert([...storage.data.values()].includes(raw));
     assert(migrated.state.chapter.unlocked);
-    const canonical = storage.getItem("originLab.save.v3");
+    const canonical = storage.getItem("originLab.save.v4");
     const fresh = core();
     assert.equal(fresh.Pt(storage).status, "ok");
-    assert.equal(storage.getItem("originLab.save.v3"), canonical);
+    assert.equal(storage.getItem("originLab.save.v4"), canonical);
   });
 test("S01/S02 legacy re-execution write protocol cannot change canonical completed state", () => {
   const c = core(),
@@ -101,13 +101,13 @@ test("S01/S02 legacy re-execution write protocol cannot change canonical complet
   s.perms = { click: 2 };
   storage.setItem("originLab.save.v2", wrap(s));
   assert.equal(c.Pt(storage).status, "ok");
-  const before = storage.getItem("originLab.save.v3");
+  const before = storage.getItem("originLab.save.v4");
   const stale = old.le();
   stale.totalTicks = 9999999;
   stale.rebirths = 9;
   storage.setItem("originLab.save", wrap(stale, 1));
   old.Je(storage, old.Pt(storage).state);
-  assert.equal(storage.getItem("originLab.save.v3"), before);
+  assert.equal(storage.getItem("originLab.save.v4"), before);
   const after = core().Pt(storage).state;
   assert.equal(after.finalResearchDone, true);
   assert.equal(after.originData, 17);
@@ -122,7 +122,7 @@ test("S03 differing legacy saves require explicit selection, never score merge",
   st.setItem("originLab.save", wrap(a, 1));
   st.setItem("originLab.save.v2", wrap(b));
   assert.equal(c.Pt(st).status, "rejected");
-  assert.equal(st.getItem("originLab.save.v3"), null);
+  assert.equal(st.getItem("originLab.save.v4"), null);
   assert(c.storageManager(st).replace(b));
   assert.equal(core().Pt(st).state.finalResearchDone, true);
 });
@@ -133,10 +133,10 @@ test("S03 corrupt and future canonical data blocks writes; explicit restore work
   ]) {
     const c = core(),
       st = new MemoryStorage();
-    st.setItem("originLab.save.v3", raw);
+    st.setItem("originLab.save.v4", raw);
     assert.equal(c.Pt(st).status, "rejected");
     assert.equal(c.Je(st, c.le()), false);
-    assert.equal(st.getItem("originLab.save.v3"), raw);
+    assert.equal(st.getItem("originLab.save.v4"), raw);
     assert(c.storageManager(st).replace(c.le()));
     assert([...st.data.values()].includes(raw));
   }
@@ -148,7 +148,7 @@ test("S04 migration quota/backup failure never writes canonical or legacy", () =
   st.setItem("originLab.save.v2", raw);
   st.fail = true;
   assert.equal(c.Pt(st).status, "rejected");
-  assert.equal(st.getItem("originLab.save.v3"), null);
+  assert.equal(st.getItem("originLab.save.v4"), null);
   assert.equal(st.getItem("originLab.save.v2"), raw);
 });
 test("S05 same version concurrent editors stop, preserve both and explicitly recover", () => {
@@ -163,7 +163,7 @@ test("S05 same version concurrent editors stop, preserve both and explicitly rec
   s.energy = 42;
   assert(a.Je(st, s));
   assert.equal(b.Je(st, sb), false);
-  assert.equal(JSON.parse(st.getItem("originLab.save.v3")).state.energy, 42);
+  assert.equal(JSON.parse(st.getItem("originLab.save.v4")).state.energy, 42);
   assert(
     b
       .storageManager(st)
@@ -178,10 +178,10 @@ test("S05 divergent journal (interrupted simultaneous commit) is surfaced on nex
     st = new MemoryStorage();
   c.Pt(st);
   c.Je(st, c.le());
-  const raw = JSON.parse(st.getItem("originLab.save.v3"));
+  const raw = JSON.parse(st.getItem("originLab.save.v4"));
   raw.commitId = "another-branch";
   raw.state.originData = 800;
-  st.setItem("originLab.save.v3.commit.another-branch", JSON.stringify(raw));
+  st.setItem("originLab.save.v4.commit.another-branch", JSON.stringify(raw));
   const next = core();
   next.Pt(st);
   assert(next.storageManager(st).blocked);
@@ -432,7 +432,7 @@ test("S06 malformed structured saves are rejected without silently defaulting pr
     st.setItem("originLab.save.v2", raw);
     assert.equal(c.Pt(st).status, "rejected");
     assert.equal(st.getItem("originLab.save.v2"), raw);
-    assert.equal(st.getItem("originLab.save.v3"), null);
+    assert.equal(st.getItem("originLab.save.v4"), null);
   }
 });
 test("R03 first chapter production and ecology match baseline for 300 ticks", () => {
@@ -446,6 +446,7 @@ test("R03 first chapter production and ecology match baseline for 300 ticks", ()
   a.pops.decomposer.ocean = 5;
   a.env.oxygen = 45;
   const b = c.Re(wrap(a)).state;
+  b.automation.enabled=false;
   for (let i = 0; i < 300; i++) {
     old.Kt(a);
     c.Kt(b);
@@ -461,7 +462,7 @@ test("S07 backup-only storage requests recovery and legacy backups remain read-o
   for (const key of [
     "originLab.save.backup.123",
     "originLab.save.v1-backup",
-    "originLab.save.v3.backup.123",
+    "originLab.save.v4.backup.123",
   ]) {
     const c = core(),
       st = new MemoryStorage(),
