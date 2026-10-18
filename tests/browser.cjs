@@ -303,7 +303,7 @@ const server = http.createServer((req, res) => {
   await check(
     "B07 file:// standalone loads without network and plays",
     async () => {
-      const ctx = await browser.newContext({ offline: true });
+      const ctx = await browser.newContext({ offline: true, viewport: { width: 390, height: 844 } });
       const file = await ctx.newPage();
       file.on("pageerror", (e) => errors.push(e.message));
       try {
